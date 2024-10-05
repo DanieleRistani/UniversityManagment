@@ -72,7 +72,7 @@ namespace University
                         break;
                     case (int)AppMenuEnum.Facultieslist:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        
+                        appMenùService.FacultiesList();
                         break;
                     case (int)AppMenuEnum.Exit:
                         Console.WriteLine($"Uscita dall' Applicazione");

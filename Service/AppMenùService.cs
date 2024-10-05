@@ -62,4 +62,72 @@ public class AppMenùService
 
        facultyService.facultyRepository.ExportFaculty();
     }
+
+    public void FacultiesList(){
+         
+            bool exitLoop = false;
+            while (!exitLoop)
+            {
+                List<String> options =[];
+                facultyService.facultyRepository.Faculties.ForEach(f =>{
+                 options.Add(f.Name);
+                });
+                String exit="Esci";
+                options.Add(exit);
+                
+
+                int selectedIndex = 0;
+                ConsoleKeyInfo key;
+
+                do
+                {
+                    Console.Clear();
+                    for (int i = 0; i < options.Count; i++)
+                    {
+                        if (i == selectedIndex)
+                        {
+                            Console.BackgroundColor = ConsoleColor.DarkBlue;
+                            Console.ForegroundColor = ConsoleColor.White;
+                        }
+                        Console.WriteLine(options[i]);
+                        Console.ResetColor();
+                    }
+
+                    key = Console.ReadKey(true);
+
+                    if (key.Key == ConsoleKey.UpArrow)
+                    {
+                        selectedIndex = (selectedIndex > 0) ? selectedIndex - 1 : options.Count - 1;
+                    }
+                    else if (key.Key == ConsoleKey.DownArrow)
+                    {
+                        selectedIndex = (selectedIndex < options.Count - 1) ? selectedIndex + 1 : 0;
+                    }
+
+                } while (key.Key != ConsoleKey.Enter);
+
+                Console.Clear();
+
+
+                options.ForEach(o=>{
+
+                if(o.Equals(exit,StringComparison.OrdinalIgnoreCase) && options.IndexOf(o)==selectedIndex){
+                    exitLoop = true;
+                    return;  
+                }else if(options.IndexOf(o)==selectedIndex){  
+                    
+                    Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                    return;   
+                }
+                });
+                
+                if(exitLoop==false){
+                Console.WriteLine("Premere un tasto per tornare alla lista delle facoltà");
+                _ = Console.ReadKey();
+                }
+
+            }
+            exitLoop = true;
+    }
+
 }

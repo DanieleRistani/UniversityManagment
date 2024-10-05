@@ -115,9 +115,10 @@ public class AppMenùService
                     exitLoop = true;
                     return;  
                 }else if(options.IndexOf(o)==selectedIndex){  
-                    
-                    Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                    Console.Clear();
+                    // Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
                     Console.WriteLine(facultyService.facultyRepository.Faculties.Find(f=>f.Name==options[selectedIndex]).ToString());
+                    
                     return;   
                 }
                 });
@@ -130,5 +131,6 @@ public class AppMenùService
             }
             exitLoop = true;
     }
+    
 
 }

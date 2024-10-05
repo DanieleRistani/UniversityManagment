@@ -24,20 +24,32 @@ public class Faculty
 
     public override string ToString()
     {
-        string table = $"Facolt  di {Name} \n";
+        string table=String.Empty; 
+        
+        table += $"{Name} \n";
         table += "--------------------------------------------\n";
         table += $"Location: {Location}\n";
+        table += "--------------------------------------------\n";
         table += "Materie:\n";
+        table += "--------------------------------------------\n";
         foreach (var matter in Matters)
         {
             table += $"- {matter.Name}\n";
         }
+
+        table += "--------------------------------------------\n";
         table += "Studenti:\n";
+        table += "--------------------------------------------\n";
+
         foreach (var student in Students)
         {
             table += $"- {student.Name} {student.SureName}\n";
         }
+
+        table += "--------------------------------------------\n";
         table += "Docenti:\n";
+        table += "--------------------------------------------\n";
+
         foreach (var teacher in Teachers)
         {
             table += $"- {teacher.Name} {teacher.SureName}\n";

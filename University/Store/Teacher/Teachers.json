@@ -1,0 +1,523 @@
+[
+   
+    {
+        "TeacherCode": "G003_P",
+        "Name": "Alberto",
+        "SureName": "Conti",
+        "Age": 47,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Giurisprudenza",
+        "TeachedMatter": {
+            "MatterCode": "G003",
+            "Name": "Diritto Penale",
+            "Department": "Facoltà di Giurisprudenza"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "G003_A",
+        "Name": "Valentina",
+        "SureName": "Bianchi",
+        "Age": 34,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Giurisprudenza",
+        "TeachedMatter": {
+            "MatterCode": "G003",
+            "Name": "Diritto Penale",
+            "Department": "Facoltà di Giurisprudenza"
+        },
+        "Role": 1
+    },
+    {
+        "TeacherCode": "G004_P",
+        "Name": "Fabrizio",
+        "SureName": "Verdi",
+        "Age": 52,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Giurisprudenza",
+        "TeachedMatter": {
+            "MatterCode": "G004",
+            "Name": "Diritto Costituzionale",
+            "Department": "Facoltà di Giurisprudenza"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "G004_A",
+        "Name": "Giorgia",
+        "SureName": "Neri",
+        "Age": 29,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Giurisprudenza",
+        "TeachedMatter": {
+            "MatterCode": "G004",
+            "Name": "Diritto Costituzionale",
+            "Department": "Facoltà di Giurisprudenza"
+        },
+        "Role": 1
+    },
+    
+    
+    {
+        "TeacherCode": "E003_P",
+        "Name": "Giovanni",
+        "SureName": "Rossi",
+        "Age": 41,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Economia",
+        "TeachedMatter": {
+            "MatterCode": "E003",
+            "Name": "Economia Aziendale",
+            "Department": "Facoltà di Economia"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "E003_A",
+        "Name": "Martina",
+        "SureName": "Bianchi",
+        "Age": 36,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Economia",
+        "TeachedMatter": {
+            "MatterCode": "E003",
+            "Name": "Economia Aziendale",
+            "Department": "Facoltà di Economia"
+        },
+        "Role": 1
+    },
+    {
+        "TeacherCode": "E004_P",
+        "Name": "Lucia",
+        "SureName": "Blu",
+        "Age": 38,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Economia",
+        "TeachedMatter": {
+            "MatterCode": "E004",
+            "Name": "Finanza",
+            "Department": "Facoltà di Economia"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "E004_A",
+        "Name": "Francesco",
+        "SureName": "Fiorini",
+        "Age": 33,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Economia",
+        "TeachedMatter": {
+            "MatterCode": "E004",
+            "Name": "Finanza",
+            "Department": "Facoltà di Economia"
+        },
+        "Role": 1
+    },
+    
+   
+    {
+        "TeacherCode": "I003_P",
+        "Name": "Simone",
+        "SureName": "Rossi",
+        "Age": 44,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Ingegneria",
+        "TeachedMatter": {
+            "MatterCode": "I003",
+            "Name": "Ingegneria Informatica",
+            "Department": "Facoltà di Ingegneria"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "I003_A",
+        "Name": "Martina",
+        "SureName": "Giuliani",
+        "Age": 29,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Ingegneria",
+        "TeachedMatter": {
+            "MatterCode": "I003",
+            "Name": "Ingegneria Informatica",
+            "Department": "Facoltà di Ingegneria"
+        },
+        "Role": 1
+    },
+    {
+        "TeacherCode": "I004_P",
+        "Name": "Antonio",
+        "SureName": "Bianchi",
+        "Age": 39,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Ingegneria",
+        "TeachedMatter": {
+            "MatterCode": "I004",
+            "Name": "Meccanica",
+            "Department": "Facoltà di Ingegneria"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "I004_A",
+        "Name": "Laura",
+        "SureName": "Fiorini",
+        "Age": 26,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Ingegneria",
+        "TeachedMatter": {
+            "MatterCode": "I004",
+            "Name": "Meccanica",
+            "Department": "Facoltà di Ingegneria"
+        },
+        "Role": 1
+    },
+
+  
+    {
+        "TeacherCode": "M003_P",
+        "Name": "Giovanni",
+        "SureName": "Lombardi",
+        "Age": 47,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Medicina",
+        "TeachedMatter": {
+            "MatterCode": "M003",
+            "Name": "Chirurgia",
+            "Department": "Facoltà di Medicina"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "M003_A",
+        "Name": "Anna",
+        "SureName": "Gallo",
+        "Age": 33,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Medicina",
+        "TeachedMatter": {
+            "MatterCode": "M003",
+            "Name": "Chirurgia",
+            "Department": "Facoltà di Medicina"
+        },
+        "Role": 1
+    },
+    {
+        "TeacherCode": "M004_P",
+        "Name": "Alberto",
+        "SureName": "Giordano",
+        "Age": 53,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Medicina",
+        "TeachedMatter": {
+            "MatterCode": "M004",
+            "Name": "Pediatria",
+            "Department": "Facoltà di Medicina"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "M004_A",
+        "Name": "Claudia",
+        "SureName": "Rinaldi",
+        "Age": 29,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Medicina",
+        "TeachedMatter": {
+            "MatterCode": "M004",
+            "Name": "Pediatria",
+            "Department": "Facoltà di Medicina"
+        },
+        "Role": 1
+    },
+    
+    
+    {
+        "TeacherCode": "L003_P",
+        "Name": "Luca",
+        "SureName": "Neri",
+        "Age": 43,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Lettere e Filosofia",
+        "TeachedMatter": {
+            "MatterCode": "L003",
+            "Name": "Letteratura Italiana",
+            "Department": "Facoltà di Lettere e Filosofia"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "L003_A",
+        "Name": "Simona",
+        "SureName": "Verdi",
+        "Age": 28,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Lettere e Filosofia",
+        "TeachedMatter": {
+            "MatterCode": "L003",
+            "Name": "Letteratura Italiana",
+            "Department": "Facoltà di Lettere e Filosofia"
+        },
+        "Role": 1
+    },
+    {
+        "TeacherCode": "L004_P",
+        "Name": "Dario",
+        "SureName": "Gallo",
+        "Age": 50,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Lettere e Filosofia",
+        "TeachedMatter": {
+            "MatterCode": "L004",
+            "Name": "Estetica",
+            "Department": "Facoltà di Lettere e Filosofia"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "L004_A",
+        "Name": "Sara",
+        "SureName": "Conti",
+        "Age": 26,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Lettere e Filosofia",
+        "TeachedMatter": {
+            "MatterCode": "L004",
+            "Name": "Estetica",
+            "Department": "Facoltà di Lettere e Filosofia"
+        },
+        "Role": 1
+    },
+
+
+    {
+        "TeacherCode": "S001_P",
+        "Name": "Emanuele",
+        "SureName": "Corti",
+        "Age": 45,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Scienze",
+        "TeachedMatter": {
+            "MatterCode": "S001",
+            "Name": "Biologia",
+            "Department": "Facoltà di Scienze"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "S001_A",
+        "Name": "Giulia",
+        "SureName": "Rossi",
+        "Age": 30,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Scienze",
+        "TeachedMatter": {
+            "MatterCode": "S001",
+            "Name": "Biologia",
+            "Department": "Facoltà di Scienze"
+        },
+        "Role": 1
+    },
+    {
+        "TeacherCode": "S002_P",
+        "Name": "Carlo",
+        "SureName": "Giordano",
+        "Age": 38,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Scienze",
+        "TeachedMatter": {
+            "MatterCode": "S002",
+            "Name": "Chimica",
+            "Department": "Facoltà di Scienze"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "S002_A",
+        "Name": "Sara",
+        "SureName": "Neri",
+        "Age": 27,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Scienze",
+        "TeachedMatter": {
+            "MatterCode": "S002",
+            "Name": "Chimica",
+            "Department": "Facoltà di Scienze"
+        },
+        "Role": 1
+    },
+
+   
+    {
+        "TeacherCode": "A001_P",
+        "Name": "Roberto",
+        "SureName": "Verdi",
+        "Age": 48,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Architettura",
+        "TeachedMatter": {
+            "MatterCode": "A001",
+            "Name": "Progettazione Architettonica",
+            "Department": "Facoltà di Architettura"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "A001_A",
+        "Name": "Elena",
+        "SureName": "Conti",
+        "Age": 35,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Architettura",
+        "TeachedMatter": {
+            "MatterCode": "A001",
+            "Name": "Progettazione Architettonica",
+            "Department": "Facoltà di Architettura"
+        },
+        "Role": 1
+    },
+    {
+        "TeacherCode": "A002_P",
+        "Name": "Francesco",
+        "SureName": "Bianchi",
+        "Age": 52,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Architettura",
+        "TeachedMatter": {
+            "MatterCode": "A002",
+            "Name": "Storia dell'Architettura",
+            "Department": "Facoltà di Architettura"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "A002_A",
+        "Name": "Martina",
+        "SureName": "Neri",
+        "Age": 29,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Architettura",
+        "TeachedMatter": {
+            "MatterCode": "A002",
+            "Name": "Storia dell'Architettura",
+            "Department": "Facoltà di Architettura"
+        },
+        "Role": 1
+    },
+
+    
+    {
+        "TeacherCode": "P001_P",
+        "Name": "Alberto",
+        "SureName": "Galli",
+        "Age": 46,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Scienze Politiche",
+        "TeachedMatter": {
+            "MatterCode": "P001",
+            "Name": "Scienze Politiche",
+            "Department": "Facoltà di Scienze Politiche"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "P001_A",
+        "Name": "Martina",
+        "SureName": "Rossi",
+        "Age": 32,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Scienze Politiche",
+        "TeachedMatter": {
+            "MatterCode": "P001",
+            "Name": "Scienze Politiche",
+            "Department": "Facoltà di Scienze Politiche"
+        },
+        "Role": 1
+    },
+    {
+        "TeacherCode": "P002_P",
+        "Name": "Francesco",
+        "SureName": "Verdi",
+        "Age": 49,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Scienze Politiche",
+        "TeachedMatter": {
+            "MatterCode": "P002",
+            "Name": "Relazioni Internazionali",
+            "Department": "Facoltà di Scienze Politiche"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "P002_A",
+        "Name": "Claudia",
+        "SureName": "Bianchi",
+        "Age": 31,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Scienze Politiche",
+        "TeachedMatter": {
+            "MatterCode": "P002",
+            "Name": "Relazioni Internazionali",
+            "Department": "Facoltà di Scienze Politiche"
+        },
+        "Role": 1
+    },
+
+    
+    {
+        "TeacherCode": "PSY001_P",
+        "Name": "Luca",
+        "SureName": "Rinaldi",
+        "Age": 40,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Psicologia",
+        "TeachedMatter": {
+            "MatterCode": "PSY001",
+            "Name": "Psicologia Generale",
+            "Department": "Facoltà di Psicologia"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "PSY001_A",
+        "Name": "Sofia",
+        "SureName": "Martini",
+        "Age": 28,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Psicologia",
+        "TeachedMatter": {
+            "MatterCode": "PSY001",
+            "Name": "Psicologia Generale",
+            "Department": "Facoltà di Psicologia"
+        },
+        "Role": 1
+    },
+    {
+        "TeacherCode": "PSY002_P",
+        "Name": "Francesco",
+        "SureName": "Galli",
+        "Age": 48,
+        "Gender": "Maschio",
+        "Department": "Facoltà di Psicologia",
+        "TeachedMatter": {
+            "MatterCode": "PSY002",
+            "Name": "Psicologia Sociale",
+            "Department": "Facoltà di Psicologia"
+        },
+        "Role": 0
+    },
+    {
+        "TeacherCode": "PSY002_A",
+        "Name": "Elena",
+        "SureName": "Conti",
+        "Age": 34,
+        "Gender": "Femmina",
+        "Department": "Facoltà di Psicologia",
+        "TeachedMatter": {
+            "MatterCode": "PSY002",
+            "Name": "Psicologia Sociale",
+            "Department": "Facoltà di Psicologia"
+        },
+        "Role": 1
+    }
+]

@@ -1,0 +1,432 @@
+[
+    {
+        "Name": "Francesco",
+        "SureName": "Conti",
+        "Age": 20,
+        "Gender": "Maschio",
+        "Matricola": "G123",
+        "Department": "Facoltà di Giurisprudenza",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Giulia",
+        "SureName": "Rossi",
+        "Age": 21,
+        "Gender": "Femmina",
+        "Matricola": "G124",
+        "Department": "Facoltà di Giurisprudenza",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Marco",
+        "SureName": "Verdi",
+        "Age": 22,
+        "Gender": "Maschio",
+        "Matricola": "G125",
+        "Department": "Facoltà di Giurisprudenza",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Giovanni",
+        "SureName": "Rizzo",
+        "Age": 22,
+        "Gender": "Maschio",
+        "Matricola": "E123",
+        "Department": "Facoltà di Economia",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Laura",
+        "SureName": "Marini",
+        "Age": 21,
+        "Gender": "Femmina",
+        "Matricola": "E124",
+        "Department": "Facoltà di Economia",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Alberto",
+        "SureName": "Esposito",
+        "Age": 20,
+        "Gender": "Maschio",
+        "Matricola": "E125",
+        "Department": "Facoltà di Economia",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Claudia",
+        "SureName": "Bianchi",
+        "Age": 22,
+        "Gender": "Femmina",
+        "Matricola": "E126",
+        "Department": "Facoltà di Economia",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Francesco",
+        "SureName": "Conti",
+        "Age": 23,
+        "Gender": "Maschio",
+        "Matricola": "E127",
+        "Department": "Facoltà di Economia",
+        "AnnoDiIscrizione": 2020,
+        "Exams": []
+    },
+    {
+        "Name": "Marco",
+        "SureName": "Gallo",
+        "Age": 19,
+        "Gender": "Maschio",
+        "Matricola": "I123",
+        "Department": "Facoltà di Ingegneria",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Francesca",
+        "SureName": "Neri",
+        "Age": 20,
+        "Gender": "Femmina",
+        "Matricola": "I124",
+        "Department": "Facoltà di Ingegneria",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Davide",
+        "SureName": "Martini",
+        "Age": 21,
+        "Gender": "Maschio",
+        "Matricola": "I125",
+        "Department": "Facoltà di Ingegneria",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Alessandra",
+        "SureName": "Bruno",
+        "Age": 22,
+        "Gender": "Femmina",
+        "Matricola": "I126",
+        "Department": "Facoltà di Ingegneria",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Riccardo",
+        "SureName": "Giorgi",
+        "Age": 20,
+        "Gender": "Maschio",
+        "Matricola": "I127",
+        "Department": "Facoltà di Ingegneria",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Martina",
+        "SureName": "Conti",
+        "Age": 23,
+        "Gender": "Femmina",
+        "Matricola": "M123",
+        "Department": "Facoltà di Medicina",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Alessio",
+        "SureName": "Rossi",
+        "Age": 22,
+        "Gender": "Maschio",
+        "Matricola": "M124",
+        "Department": "Facoltà di Medicina",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Sofia",
+        "SureName": "Verdi",
+        "Age": 21,
+        "Gender": "Femmina",
+        "Matricola": "M125",
+        "Department": "Facoltà di Medicina",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Luca",
+        "SureName": "Bianchi",
+        "Age": 20,
+        "Gender": "Maschio",
+        "Matricola": "M126",
+        "Department": "Facoltà di Medicina",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Giulia",
+        "SureName": "Conti",
+        "Age": 23,
+        "Gender": "Femmina",
+        "Matricola": "M127",
+        "Department": "Facoltà di Medicina",
+        "AnnoDiIscrizione": 2020,
+        "Exams": []
+    },
+    {
+        "Name": "Alessandro",
+        "SureName": "Giorgi",
+        "Age": 20,
+        "Gender": "Maschio",
+        "Matricola": "L123",
+        "Department": "Facoltà di Lettere e Filosofia",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Claudia",
+        "SureName": "Rinaldi",
+        "Age": 22,
+        "Gender": "Femmina",
+        "Matricola": "L124",
+        "Department": "Facoltà di Lettere e Filosofia",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Giovanni",
+        "SureName": "Ruggeri",
+        "Age": 23,
+        "Gender": "Maschio",
+        "Matricola": "L125",
+        "Department": "Facoltà di Lettere e Filosofia",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Sara",
+        "SureName": "Ricci",
+        "Age": 21,
+        "Gender": "Femmina",
+        "Matricola": "L126",
+        "Department": "Facoltà di Lettere e Filosofia",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Lucia",
+        "SureName": "Fusco",
+        "Age": 20,
+        "Gender": "Femmina",
+        "Matricola": "L127",
+        "Department": "Facoltà di Lettere e Filosofia",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Matteo",
+        "SureName": "Bruno",
+        "Age": 21,
+        "Gender": "Maschio",
+        "Matricola": "S123",
+        "Department": "Facoltà di Scienze",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Chiara",
+        "SureName": "Rosa",
+        "Age": 22,
+        "Gender": "Femmina",
+        "Matricola": "S124",
+        "Department": "Facoltà di Scienze",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Luca",
+        "SureName": "Giorgi",
+        "Age": 20,
+        "Gender": "Maschio",
+        "Matricola": "S125",
+        "Department": "Facoltà di Scienze",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Valentina",
+        "SureName": "Marini",
+        "Age": 19,
+        "Gender": "Femmina",
+        "Matricola": "S126",
+        "Department": "Facoltà di Scienze",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Alessandro",
+        "SureName": "Sartori",
+        "Age": 22,
+        "Gender": "Maschio",
+        "Matricola": "S127",
+        "Department": "Facoltà di Scienze",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Simone",
+        "SureName": "Cattaneo",
+        "Age": 22,
+        "Gender": "Maschio",
+        "Matricola": "A123",
+        "Department": "Facoltà di Architettura",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Alessia",
+        "SureName": "Ricci",
+        "Age": 21,
+        "Gender": "Femmina",
+        "Matricola": "A124",
+        "Department": "Facoltà di Architettura",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Luca",
+        "SureName": "Ferrari",
+        "Age": 20,
+        "Gender": "Maschio",
+        "Matricola": "A125",
+        "Department": "Facoltà di Architettura",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Martina",
+        "SureName": "Gallo",
+        "Age": 22,
+        "Gender": "Femmina",
+        "Matricola": "A126",
+        "Department": "Facoltà di Architettura",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Giulia",
+        "SureName": "Conti",
+        "Age": 19,
+        "Gender": "Femmina",
+        "Matricola": "A127",
+        "Department": "Facoltà di Architettura",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Alberto",
+        "SureName": "Rossi",
+        "Age": 22,
+        "Gender": "Maschio",
+        "Matricola": "P123",
+        "Department": "Facoltà di Scienze Politiche",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Valentina",
+        "SureName": "Bianchi",
+        "Age": 21,
+        "Gender": "Femmina",
+        "Matricola": "P124",
+        "Department": "Facoltà di Scienze Politiche",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Matteo",
+        "SureName": "Verdi",
+        "Age": 20,
+        "Gender": "Maschio",
+        "Matricola": "P125",
+        "Department": "Facoltà di Scienze Politiche",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Giulia",
+        "SureName": "Neri",
+        "Age": 19,
+        "Gender": "Femmina",
+        "Matricola": "P126",
+        "Department": "Facoltà di Scienze Politiche",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Claudia",
+        "SureName": "Gallo",
+        "Age": 22,
+        "Gender": "Femmina",
+        "Matricola": "P127",
+        "Department": "Facoltà di Scienze Politiche",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Chiara",
+        "SureName": "Neri",
+        "Age": 21,
+        "Gender": "Femmina",
+        "Matricola": "P123",
+        "Department": "Facoltà di Psicologia",
+        "AnnoDiIscrizione": 2022,
+        "Exams": []
+    },
+    {
+        "Name": "Marco",
+        "SureName": "Bruno",
+        "Age": 22,
+        "Gender": "Maschio",
+        "Matricola": "P124",
+        "Department": "Facoltà di Psicologia",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    },
+    {
+        "Name": "Sofia",
+        "SureName": "Conti",
+        "Age": 20,
+        "Gender": "Femmina",
+        "Matricola": "P125",
+        "Department": "Facoltà di Psicologia",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Davide",
+        "SureName": "Ferri",
+        "Age": 21,
+        "Gender": "Maschio",
+        "Matricola": "P126",
+        "Department": "Facoltà di Psicologia",
+        "AnnoDiIscrizione": 2023,
+        "Exams": []
+    },
+    {
+        "Name": "Alessandra",
+        "SureName": "Marini",
+        "Age": 22,
+        "Gender": "Femmina",
+        "Matricola": "P127",
+        "Department": "Facoltà di Psicologia",
+        "AnnoDiIscrizione": 2021,
+        "Exams": []
+    }
+]

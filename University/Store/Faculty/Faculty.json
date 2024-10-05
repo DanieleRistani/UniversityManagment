@@ -1,0 +1,164 @@
+[
+    {
+        "Name": "Facoltà di Giurisprudenza",
+        "Location": "Location Giurisprudenza",
+        "Matters": [
+            { "MatterCode": "G001", "Name": "Diritto Privato", "DepartmentName": "Facoltà di Giurisprudenza" },
+            { "MatterCode": "G002", "Name": "Diritto Pubblico", "DepartmentName": "Facoltà di Giurisprudenza" },
+            { "MatterCode": "G003", "Name": "Diritto Costituzionale", "DepartmentName": "Facoltà di Giurisprudenza" },
+            { "MatterCode": "G004", "Name": "Diritto Penale", "DepartmentName": "Facoltà di Giurisprudenza" },
+            { "MatterCode": "G005", "Name": "Diritto Commerciale", "DepartmentName": "Facoltà di Giurisprudenza" },
+            { "MatterCode": "G006", "Name": "Diritto Internazionale", "DepartmentName": "Facoltà di Giurisprudenza" },
+            { "MatterCode": "G007", "Name": "Filosofia del Diritto", "DepartmentName": "Facoltà di Giurisprudenza" },
+            { "MatterCode": "G008", "Name": "Procedura Civile", "DepartmentName": "Facoltà di Giurisprudenza" },
+            { "MatterCode": "G009", "Name": "Procedura Penale", "DepartmentName": "Facoltà di Giurisprudenza" },
+            { "MatterCode": "G010", "Name": "Diritto del Lavoro", "DepartmentName": "Facoltà di Giurisprudenza" }
+        ],
+        "Students": [],
+        "Teachers": []
+    },
+    {
+        "Name": "Facoltà di Economia",
+        "Location": "Location Economia",
+        "Matters": [
+            { "MatterCode": "E001", "Name": "Microeconomia", "DepartmentName": "Facoltà di Economia" },
+            { "MatterCode": "E002", "Name": "Macroeconomia", "DepartmentName": "Facoltà di Economia" },
+            { "MatterCode": "E003", "Name": "Statistica", "DepartmentName": "Facoltà di Economia" },
+            { "MatterCode": "E004", "Name": "Finanza Aziendale", "DepartmentName": "Facoltà di Economia" },
+            { "MatterCode": "E005", "Name": "Marketing", "DepartmentName": "Facoltà di Economia" },
+            { "MatterCode": "E006", "Name": "Economia Politica", "DepartmentName": "Facoltà di Economia" },
+            { "MatterCode": "E007", "Name": "Contabilità", "DepartmentName": "Facoltà di Economia" },
+            { "MatterCode": "E008", "Name": "Economia Internazionale", "DepartmentName": "Facoltà di Economia" },
+            { "MatterCode": "E009", "Name": "Management", "DepartmentName": "Facoltà di Economia" },
+            { "MatterCode": "E010", "Name": "Politica Economica", "DepartmentName": "Facoltà di Economia" }
+        ],
+        "Students": [],
+        "Teachers": []
+    },
+    {
+        "Name": "Facoltà di Ingegneria",
+        "Location": "Location Ingegneria",
+        "Matters": [
+            { "MatterCode": "I001", "Name": "Matematica I", "DepartmentName": "Facoltà di Ingegneria" },
+            { "MatterCode": "I002", "Name": "Fisica Tecnica", "DepartmentName": "Facoltà di Ingegneria" },
+            { "MatterCode": "I003", "Name": "Meccanica Applicata", "DepartmentName": "Facoltà di Ingegneria" },
+            { "MatterCode": "I004", "Name": "Elettronica", "DepartmentName": "Facoltà di Ingegneria" },
+            { "MatterCode": "I005", "Name": "Chimica Industriale", "DepartmentName": "Facoltà di Ingegneria" },
+            { "MatterCode": "I006", "Name": "Informatica", "DepartmentName": "Facoltà di Ingegneria" },
+            { "MatterCode": "I007", "Name": "Costruzione di Macchine", "DepartmentName": "Facoltà di Ingegneria" },
+            { "MatterCode": "I008", "Name": "Progettazione Elettrica", "DepartmentName": "Facoltà di Ingegneria" },
+            { "MatterCode": "I009", "Name": "Ingegneria dei Materiali", "DepartmentName": "Facoltà di Ingegneria" },
+            { "MatterCode": "I010", "Name": "Automatica", "DepartmentName": "Facoltà di Ingegneria" }
+        ],
+        "Students": [],
+        "Teachers": []
+    },
+    {
+        "Name": "Facoltà di Medicina",
+        "Location": "Location Medicina",
+        "Matters": [
+            { "MatterCode": "M001", "Name": "Anatomia Umana", "DepartmentName": "Facoltà di Medicina" },
+            { "MatterCode": "M002", "Name": "Fisiologia", "DepartmentName": "Facoltà di Medicina" },
+            { "MatterCode": "M003", "Name": "Biochimica", "DepartmentName": "Facoltà di Medicina" },
+            { "MatterCode": "M004", "Name": "Patologia", "DepartmentName": "Facoltà di Medicina" },
+            { "MatterCode": "M005", "Name": "Farmacologia", "DepartmentName": "Facoltà di Medicina" },
+            { "MatterCode": "M006", "Name": "Microbiologia", "DepartmentName": "Facoltà di Medicina" },
+            { "MatterCode": "M007", "Name": "Chirurgia", "DepartmentName": "Facoltà di Medicina" },
+            { "MatterCode": "M008", "Name": "Medicina Interna", "DepartmentName": "Facoltà di Medicina" },
+            { "MatterCode": "M009", "Name": "Pediatria", "DepartmentName": "Facoltà di Medicina" },
+            { "MatterCode": "M010", "Name": "Ginecologia", "DepartmentName": "Facoltà di Medicina" }
+        ],
+        "Students": [],
+        "Teachers": []
+    },
+    {
+        "Name": "Facoltà di Lettere e Filosofia",
+        "Location": "Location Lettere e Filosofia",
+        "Matters": [
+            { "MatterCode": "L001", "Name": "Storia della Letteratura", "DepartmentName": "Facoltà di Lettere e Filosofia" },
+            { "MatterCode": "L002", "Name": "Filosofia Contemporanea", "DepartmentName": "Facoltà di Lettere e Filosofia" },
+            { "MatterCode": "L003", "Name": "Lingua e Letteratura Italiana", "DepartmentName": "Facoltà di Lettere e Filosofia" },
+            { "MatterCode": "L004", "Name": "Lingue Straniere", "DepartmentName": "Facoltà di Lettere e Filosofia" },
+            { "MatterCode": "L005", "Name": "Estetica", "DepartmentName": "Facoltà di Lettere e Filosofia" },
+            { "MatterCode": "L006", "Name": "Critica Letteraria", "DepartmentName": "Facoltà di Lettere e Filosofia" },
+            { "MatterCode": "L007", "Name": "Storia dell'Arte", "DepartmentName": "Facoltà di Lettere e Filosofia" },
+            { "MatterCode": "L008", "Name": "Sociologia", "DepartmentName": "Facoltà di Lettere e Filosofia" },
+            { "MatterCode": "L009", "Name": "Antropologia Culturale", "DepartmentName": "Facoltà di Lettere e Filosofia" },
+            { "MatterCode": "L010", "Name": "Teoria della Comunicazione", "DepartmentName": "Facoltà di Lettere e Filosofia" }
+        ],
+        "Students": [],
+        "Teachers": []
+    },
+    {
+        "Name": "Facoltà di Scienze",
+        "Location": "Location Scienze",
+        "Matters": [
+            { "MatterCode": "S001", "Name": "Biologia", "DepartmentName": "Facoltà di Scienze" },
+            { "MatterCode": "S002", "Name": "Chimica", "DepartmentName": "Facoltà di Scienze" },
+            { "MatterCode": "S003", "Name": "Fisica", "DepartmentName": "Facoltà di Scienze" },
+            { "MatterCode": "S004", "Name": "Matematica", "DepartmentName": "Facoltà di Scienze" },
+            { "MatterCode": "S005", "Name": "Statistica", "DepartmentName": "Facoltà di Scienze" },
+            { "MatterCode": "S006", "Name": "Geologia", "DepartmentName": "Facoltà di Scienze" },
+            { "MatterCode": "S007", "Name": "Ecologia", "DepartmentName": "Facoltà di Scienze" },
+            { "MatterCode": "S008", "Name": "Biochimica", "DepartmentName": "Facoltà di Scienze" },
+            { "MatterCode": "S009", "Name": "Informatica", "DepartmentName": "Facoltà di Scienze" },
+            { "MatterCode": "S010", "Name": "Astronomia", "DepartmentName": "Facoltà di Scienze" }
+        ],
+        "Students": [],
+        "Teachers": []
+    },
+    {
+        "Name": "Facoltà di Architettura",
+        "Location": "Location Architettura",
+        "Matters": [
+            { "MatterCode": "A001", "Name": "Storia dell'Architettura", "DepartmentName": "Facoltà di Architettura" },
+            { "MatterCode": "A002", "Name": "Progettazione Architettonica", "DepartmentName": "Facoltà di Architettura" },
+            { "MatterCode": "A003", "Name": "Tecniche Costruttive", "DepartmentName": "Facoltà di Architettura" },
+            { "MatterCode": "A004", "Name": "Urbanistica", "DepartmentName": "Facoltà di Architettura" },
+            { "MatterCode": "A005", "Name": "Design degli Interni", "DepartmentName": "Facoltà di Architettura" },
+            { "MatterCode": "A006", "Name": "Disegno Tecnico", "DepartmentName": "Facoltà di Architettura" },
+            { "MatterCode": "A007", "Name": "Teoria dell'Architettura", "DepartmentName": "Facoltà di Architettura" },
+            { "MatterCode": "A008", "Name": "Architettura Sostenibile", "DepartmentName": "Facoltà di Architettura" },
+            { "MatterCode": "A009", "Name": "Rappresentazione Grafica", "DepartmentName": "Facoltà di Architettura" },
+            { "MatterCode": "A010", "Name": "Fotografia Architettonica", "DepartmentName": "Facoltà di Architettura" }
+        ],
+        "Students": [],
+        "Teachers": []
+    },
+    {
+        "Name": "Facoltà di Scienze Politiche",
+        "Location": "Location Scienze Politiche",
+        "Matters": [
+            { "MatterCode": "P001", "Name": "Teoria Politica", "DepartmentName": "Facoltà di Scienze Politiche" },
+            { "MatterCode": "P002", "Name": "Diritto Pubblico", "DepartmentName": "Facoltà di Scienze Politiche" },
+            { "MatterCode": "P003", "Name": "Politica Comparata", "DepartmentName": "Facoltà di Scienze Politiche" },
+            { "MatterCode": "P004", "Name": "Economia Politica", "DepartmentName": "Facoltà di Scienze Politiche" },
+            { "MatterCode": "P005", "Name": "Sociologia Politica", "DepartmentName": "Facoltà di Scienze Politiche" },
+            { "MatterCode": "P006", "Name": "Relazioni Internazionali", "DepartmentName": "Facoltà di Scienze Politiche" },
+            { "MatterCode": "P007", "Name": "Storia delle Istituzioni", "DepartmentName": "Facoltà di Scienze Politiche" },
+            { "MatterCode": "P008", "Name": "Politica Europea", "DepartmentName": "Facoltà di Scienze Politiche" },
+            { "MatterCode": "P009", "Name": "Politica di Sicurezza", "DepartmentName": "Facoltà di Scienze Politiche" },
+            { "MatterCode": "P010", "Name": "Comunicazione Politica", "DepartmentName": "Facoltà di Scienze Politiche" }
+        ],
+        "Students": [],
+        "Teachers": []
+    },
+    {
+        "Name": "Facoltà di Psicologia",
+        "Location": "Location Psicologia",
+        "Matters": [
+            { "MatterCode": "PS001", "Name": "Psicologia Generale", "DepartmentName": "Facoltà di Psicologia" },
+            { "MatterCode": "PS002", "Name": "Psicologia dello Sviluppo", "DepartmentName": "Facoltà di Psicologia" },
+            { "MatterCode": "PS003", "Name": "Psicologia Sociale", "DepartmentName": "Facoltà di Psicologia" },
+            { "MatterCode": "PS004", "Name": "Psicologia Clinica", "DepartmentName": "Facoltà di Psicologia" },
+            { "MatterCode": "PS005", "Name": "Neuropsicologia", "DepartmentName": "Facoltà di Psicologia" },
+            { "MatterCode": "PS006", "Name": "Psicologia del Lavoro", "DepartmentName": "Facoltà di Psicologia" },
+            { "MatterCode": "PS007", "Name": "Metodologia della Ricerca", "DepartmentName": "Facoltà di Psicologia" },
+            { "MatterCode": "PS008", "Name": "Teorie della Personalità", "DepartmentName": "Facoltà di Psicologia" },
+            { "MatterCode": "PS009", "Name": "Psicopatologia", "DepartmentName": "Facoltà di Psicologia" },
+            { "MatterCode": "PS010", "Name": "Psicologia Cognitiva", "DepartmentName": "Facoltà di Psicologia" }
+        ],
+        "Students": [],
+        "Teachers": []
+    }
+]

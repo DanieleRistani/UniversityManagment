@@ -1,0 +1,288 @@
+[
+    {
+        "ExamCode": "EX001",
+        "MatterExam": {
+            "MatterCode": "G001",
+            "Name": "Diritto Privato"
+        },
+        "TeacherCode": "G004_P",
+        "StudentMatricola": "G123",
+        "ExamDate": "2024-09-29",
+        "Result": 28
+    },
+    {
+        "ExamCode": "EX002",
+        "MatterExam": {
+            "MatterCode": "G003",
+            "Name": "Diritto Costituzionale"
+        },
+        "TeacherCode": "G003_A",
+        "StudentMatricola": "G124",
+        "ExamDate": "2024-10-01",
+        "Result": 22
+    },
+    {
+        "ExamCode": "EX003",
+        "MatterExam": {
+            "MatterCode": "E001",
+            "Name": "Microeconomia"
+        },
+        "TeacherCode": "E003_P",
+        "StudentMatricola": "E125",
+        "ExamDate": "2024-10-05",
+        "Result": 30
+    },
+    {
+        "ExamCode": "EX004",
+        "MatterExam": {
+            "MatterCode": "E004",
+            "Name": "Finanza Aziendale"
+        },
+        "TeacherCode": "E004_A",
+        "StudentMatricola": "E124",
+        "ExamDate": "2024-09-30",
+        "Result": 26
+    },
+    {
+        "ExamCode": "EX005",
+        "MatterExam": {
+            "MatterCode": "I001",
+            "Name": "Matematica I"
+        },
+        "TeacherCode": "I003_P",
+        "StudentMatricola": "I123",
+        "ExamDate": "2024-09-28",
+        "Result": 29
+    },
+    {
+        "ExamCode": "EX006",
+        "MatterExam": {
+            "MatterCode": "I003",
+            "Name": "Meccanica Applicata"
+        },
+        "TeacherCode": "I004_A",
+        "StudentMatricola": "I126",
+        "ExamDate": "2024-10-03",
+        "Result": 25
+    },
+    {
+        "ExamCode": "EX007",
+        "MatterExam": {
+            "MatterCode": "M007",
+            "Name": "Chirurgia"
+        },
+        "TeacherCode": "M003_A",
+        "StudentMatricola": "M126",
+        "ExamDate": "2024-09-27",
+        "Result": 21
+    },
+    {
+        "ExamCode": "EX008",
+        "MatterExam": {
+            "MatterCode": "M009",
+            "Name": "Pediatria"
+        },
+        "TeacherCode": "M004_P",
+        "StudentMatricola": "M125",
+        "ExamDate": "2024-09-26",
+        "Result": 27
+    },
+    {
+        "ExamCode": "EX009",
+        "MatterExam": {
+            "MatterCode": "L001",
+            "Name": "Storia della Letteratura"
+        },
+        "TeacherCode": "L003_P",
+        "StudentMatricola": "L123",
+        "ExamDate": "2024-10-02",
+        "Result": 19
+    },
+    {
+        "ExamCode": "EX010",
+        "MatterExam": {
+            "MatterCode": "L005",
+            "Name": "Estetica"
+        },
+        "TeacherCode": "L004_A",
+        "StudentMatricola": "L124",
+        "ExamDate": "2024-10-04",
+        "Result": 30
+    },
+    {
+        "ExamCode": "EX011",
+        "MatterExam": {
+            "MatterCode": "S001",
+            "Name": "Biologia"
+        },
+        "TeacherCode": "S001_P",
+        "StudentMatricola": "S123",
+        "ExamDate": "2024-09-30",
+        "Result": 28
+    },
+    {
+        "ExamCode": "EX012",
+        "MatterExam": {
+            "MatterCode": "S002",
+            "Name": "Chimica"
+        },
+        "TeacherCode": "S002_A",
+        "StudentMatricola": "S126",
+        "ExamDate": "2024-10-01",
+        "Result": 23
+    },
+    {
+        "ExamCode": "EX013",
+        "MatterExam": {
+            "MatterCode": "A002",
+            "Name": "Progettazione Architettonica"
+        },
+        "TeacherCode": "A001_P",
+        "StudentMatricola": "A125",
+        "ExamDate": "2024-09-28",
+        "Result": 26
+    },
+    {
+        "ExamCode": "EX014",
+        "MatterExam": {
+            "MatterCode": "A001",
+            "Name": "Storia dell'Architettura"
+        },
+        "TeacherCode": "A002_A",
+        "StudentMatricola": "A126",
+        "ExamDate": "2024-10-03",
+        "Result": 20
+    },
+    {
+        "ExamCode": "EX015",
+        "MatterExam": {
+            "MatterCode": "P001",
+            "Name": "Teoria Politica"
+        },
+        "TeacherCode": "P001_A",
+        "StudentMatricola": "P123",
+        "ExamDate": "2024-09-29",
+        "Result": 29
+    },
+    {
+        "ExamCode": "EX016",
+        "MatterExam": {
+            "MatterCode": "P006",
+            "Name": "Relazioni Internazionali"
+        },
+        "TeacherCode": "P002_P",
+        "StudentMatricola": "P126",
+        "ExamDate": "2024-10-02",
+        "Result": 24
+    },
+    {
+        "ExamCode": "EX017",
+        "MatterExam": {
+            "MatterCode": "PS001",
+            "Name": "Psicologia Generale"
+        },
+        "TeacherCode": "PSY001_A",
+        "StudentMatricola": "P125",
+        "ExamDate": "2024-10-04",
+        "Result": 22
+    },
+    {
+        "ExamCode": "EX018",
+        "MatterExam": {
+            "MatterCode": "PS003",
+            "Name": "Psicologia Sociale"
+        },
+        "TeacherCode": "PSY002_P",
+        "StudentMatricola": "P126",
+        "ExamDate": "2024-09-30",
+        "Result": 30
+    },
+    {
+        "ExamCode": "EX019",
+        "MatterExam": {
+            "MatterCode": "G004",
+            "Name": "Diritto Penale"
+        },
+        "TeacherCode": "G003_A",
+        "StudentMatricola": "G125",
+        "ExamDate": "2024-10-01",
+        "Result": 18
+    },
+    {
+        "ExamCode": "EX020",
+        "MatterExam": {
+            "MatterCode": "G002",
+            "Name": "Diritto Pubblico"
+        },
+        "TeacherCode": "G004_P",
+        "StudentMatricola": "G126",
+        "ExamDate": "2024-10-03",
+        "Result": 25
+    },
+    {
+        "ExamCode": "EX021",
+        "MatterExam": {
+            "MatterCode": "E002",
+            "Name": "Macroeconomia"
+        },
+        "TeacherCode": "E003_A",
+        "StudentMatricola": "E126",
+        "ExamDate": "2024-10-05",
+        "Result": 29
+    },
+    {
+        "ExamCode": "EX022",
+        "MatterExam": {
+            "MatterCode": "E004",
+            "Name": "Finanza Aziendale"
+        },
+        "TeacherCode": "E004_P",
+        "StudentMatricola": "E125",
+        "ExamDate": "2024-09-28",
+        "Result": 26
+    },
+    {
+        "ExamCode": "EX023",
+        "MatterExam": {
+            "MatterCode": "I006",
+            "Name": "Informatica"
+        },
+        "TeacherCode": "I003_P",
+        "StudentMatricola": "I125",
+        "ExamDate": "2024-09-29",
+        "Result": 28
+    },
+    {
+        "ExamCode": "EX024",
+        "MatterExam": {
+            "MatterCode": "I004",
+            "Name": "Elettronica"
+        },
+        "TeacherCode": "I004_A",
+        "StudentMatricola": "I124",
+        "ExamDate": "2024-10-01",
+        "Result": 30
+    },
+    {
+        "ExamCode": "EX025",
+        "MatterExam": {
+            "MatterCode": "M005",
+            "Name": "Farmacologia"
+        },
+        "TeacherCode": "M003_A",
+        "StudentMatricola": "M126",
+        "ExamDate": "2024-10-02",
+        "Result": 20
+    },
+    {
+        "ExamCode": "EX026",
+        "MatterExam": {
+            "MatterCode": "M002",
+            "Name": "Fisiologia"
+        },
+        "TeacherCode": "M002_P",
+        "StudentMatricola": "M125",
+        "ExamDate": "2024-10-04",
+        "Result": 19
+    }
+]

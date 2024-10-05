@@ -22,6 +22,32 @@ public class Faculty
         Teachers = new List<Teacher>();
     }
 
+    public override string ToString()
+    {
+        string table = $"Facolt  di {Name} \n";
+        table += "--------------------------------------------\n";
+        table += $"Location: {Location}\n";
+        table += "Materie:\n";
+        foreach (var matter in Matters)
+        {
+            table += $"- {matter.Name}\n";
+        }
+        table += "Studenti:\n";
+        foreach (var student in Students)
+        {
+            table += $"- {student.Name} {student.SureName}\n";
+        }
+        table += "Docenti:\n";
+        foreach (var teacher in Teachers)
+        {
+            table += $"- {teacher.Name} {teacher.SureName}\n";
+        }
+        table += "--------------------------------------------\n";
+        return table;
+    }
+            
+        
+
     
 }
 

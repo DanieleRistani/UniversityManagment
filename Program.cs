@@ -1,6 +1,4 @@
-﻿using OPP.Entity;
-using University.Enum;
-using University.Repository;
+﻿using University.Enum;
 using University.Service;
 
 namespace University
@@ -10,10 +8,14 @@ namespace University
 
         static AppMenùService appMenùService = new AppMenùService();
     
-        
+    
+
+
         static void Main(string[] args)=>AppMenu();
-        
-            
+
+
+
+
         public static void AppMenu()
         {
             

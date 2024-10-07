@@ -192,20 +192,28 @@ public class StudentsService
             {
 
                 ILog.AddNewLog("Valore non valido", "SearchStudent");
-                Console.WriteLine("Valore numerico non valido");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Valore numerico non valido");
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else if (name == string.Empty)
             {
                 ILog.AddNewLog("Valore non valido", "SearchStudent");
 
-                Console.WriteLine("Valore nullo");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Valore nullo");
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else
@@ -232,19 +240,27 @@ public class StudentsService
             {
 
                 ILog.AddNewLog("Valore non valido", "SearchStudent");
-                Console.WriteLine("Valore numerico non valido");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Valore numerico non valido");
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else if (sureName == string.Empty)
             {
                 ILog.AddNewLog("Valore non valido", "SearchStudent");
-                Console.WriteLine("Valore nullo");
+                
                 Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Valore nullo");
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else
@@ -307,19 +323,27 @@ public class StudentsService
             {
 
                 ILog.AddNewLog("Valore non valido", "AddStudent");
+                
+               Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
                 Console.WriteLine("Valore numerico non valido");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else if (name == string.Empty)
             {
                 ILog.AddNewLog("Valore non valido", "AddStudent");
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
                 Console.WriteLine("Valore nullo");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else
@@ -349,19 +373,27 @@ public class StudentsService
             {
 
                 ILog.AddNewLog("Valore non valido", "AddStudent");
+                
+                Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
                 Console.WriteLine("Valore numerico non valido");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else if (sureName == string.Empty)
             {
                 ILog.AddNewLog("Valore non valido", "AddStudent");
-                Console.WriteLine("Valore nullo");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+               
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                  Console.WriteLine("Valore nullo");
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else
@@ -401,27 +433,39 @@ public class StudentsService
             else if (sureName == string.Empty)
             {
                 ILog.AddNewLog("Valore non valido", "AddStudent");
-                Console.WriteLine("Valore nullo");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Valore nullo");
+                 Console.SetCursorPosition(xCursor, yCursor);
             }
             else if (!int.TryParse(age, out _))
             {
                 ILog.AddNewLog("Valore non valido", "AddStudent");
-                Console.WriteLine("Valore stringa non valido");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Valore stringa non valido");
+                 Console.SetCursorPosition(xCursor, yCursor);
             }
             else
             {
 
                 ILog.AddNewLog("Tentativo di inserimento minore", "AddStudent");
-                Console.WriteLine("Età non valida");
+                
                 Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Età non valida");
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
         }
@@ -507,10 +551,15 @@ public class StudentsService
 
                  if(s.Matricola==mat){
                  ILog.AddNewLog("Matricola già esistente", "AddStudent");
-                 Console.WriteLine("Valore non accettato,matricola esistente");
                  Console.SetCursorPosition(xCursor, yCursor);
                  Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Valore non accettato,matricola esistente");
                  Console.SetCursorPosition(xCursor, yCursor);
+
+
                  matUnique = false;
                  return;
                  }
@@ -529,28 +578,42 @@ public class StudentsService
             else if (mat == string.Empty)
             {
                 ILog.AddNewLog("Valore non valido ,valore nullo", "AddStudent");
-                Console.WriteLine("Valore nullo");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Valore nullo");
+                 Console.SetCursorPosition(xCursor, yCursor);
+
                 matUnique = true;
             }
             else if (mat.Length != 4)
             {
                 ILog.AddNewLog("La matricola deve avere  4 caratteri", "AddStudent");
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
                 Console.WriteLine("Matricola non di 4 caratteri");
                 Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+
                 matUnique = true;
             }
             else if (!int.TryParse(gender, out _))
             {
                 ILog.AddNewLog("Valore numerico non valido lettera iniziale non presente", "AddStudent");
-                Console.WriteLine("Lettera iniziale non presente");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Lettera iniziale non presente");
+                 Console.SetCursorPosition(xCursor, yCursor);
                 matUnique = true;
             }
         }
@@ -670,17 +733,25 @@ public class StudentsService
             }else if (date == string.Empty)
             {
                 ILog.AddNewLog("Valore non valido, valore nullo", "AddStudent");
-                Console.WriteLine("Valore nullo");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+               
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                  Console.WriteLine("Valore nullo");
+                 Console.SetCursorPosition(xCursor, yCursor);
 
             }else{
                 ILog.AddNewLog("Data non valida", "AddStudent");
-                Console.WriteLine("Data non valida");
-                Console.SetCursorPosition(xCursor, yCursor);
-                Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                Console.SetCursorPosition(xCursor, yCursor);
+                
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor+1);
+                 Console.WriteLine("Data non valida");
+                 Console.SetCursorPosition(xCursor, yCursor);
             }
         }
         isValidField = false;

@@ -10,7 +10,7 @@
         "TeachedMatter": {
             "MatterCode": "G003",
             "Name": "Diritto Penale",
-            "Department": "Facoltà di Giurisprudenza"
+            "DepartmentName": "Facoltà di Giurisprudenza"
         },
         "Role": 0
     },
@@ -24,7 +24,7 @@
         "TeachedMatter": {
             "MatterCode": "G003",
             "Name": "Diritto Penale",
-            "Department": "Facoltà di Giurisprudenza"
+            "DepartmentName": "Facoltà di Giurisprudenza"
         },
         "Role": 1
     },
@@ -38,7 +38,7 @@
         "TeachedMatter": {
             "MatterCode": "G004",
             "Name": "Diritto Costituzionale",
-            "Department": "Facoltà di Giurisprudenza"
+            "DepartmentName": "Facoltà di Giurisprudenza"
         },
         "Role": 0
     },
@@ -52,7 +52,7 @@
         "TeachedMatter": {
             "MatterCode": "G004",
             "Name": "Diritto Costituzionale",
-            "Department": "Facoltà di Giurisprudenza"
+            "DepartmentName": "Facoltà di Giurisprudenza"
         },
         "Role": 1
     },
@@ -68,7 +68,7 @@
         "TeachedMatter": {
             "MatterCode": "E003",
             "Name": "Economia Aziendale",
-            "Department": "Facoltà di Economia"
+            "DepartmentName": "Facoltà di Economia"
         },
         "Role": 0
     },
@@ -82,7 +82,7 @@
         "TeachedMatter": {
             "MatterCode": "E003",
             "Name": "Economia Aziendale",
-            "Department": "Facoltà di Economia"
+            "DepartmentName": "Facoltà di Economia"
         },
         "Role": 1
     },
@@ -96,7 +96,7 @@
         "TeachedMatter": {
             "MatterCode": "E004",
             "Name": "Finanza",
-            "Department": "Facoltà di Economia"
+            "DepartmentName": "Facoltà di Economia"
         },
         "Role": 0
     },
@@ -110,7 +110,7 @@
         "TeachedMatter": {
             "MatterCode": "E004",
             "Name": "Finanza",
-            "Department": "Facoltà di Economia"
+            "DepartmentName": "Facoltà di Economia"
         },
         "Role": 1
     },
@@ -126,7 +126,7 @@
         "TeachedMatter": {
             "MatterCode": "I003",
             "Name": "Ingegneria Informatica",
-            "Department": "Facoltà di Ingegneria"
+            "DepartmentName": "Facoltà di Ingegneria"
         },
         "Role": 0
     },
@@ -140,7 +140,7 @@
         "TeachedMatter": {
             "MatterCode": "I003",
             "Name": "Ingegneria Informatica",
-            "Department": "Facoltà di Ingegneria"
+            "DepartmentName": "Facoltà di Ingegneria"
         },
         "Role": 1
     },
@@ -154,7 +154,7 @@
         "TeachedMatter": {
             "MatterCode": "I004",
             "Name": "Meccanica",
-            "Department": "Facoltà di Ingegneria"
+            "DepartmentName": "Facoltà di Ingegneria"
         },
         "Role": 0
     },
@@ -168,7 +168,7 @@
         "TeachedMatter": {
             "MatterCode": "I004",
             "Name": "Meccanica",
-            "Department": "Facoltà di Ingegneria"
+            "DepartmentName": "Facoltà di Ingegneria"
         },
         "Role": 1
     },
@@ -184,7 +184,7 @@
         "TeachedMatter": {
             "MatterCode": "M003",
             "Name": "Chirurgia",
-            "Department": "Facoltà di Medicina"
+            "DepartmentName": "Facoltà di Medicina"
         },
         "Role": 0
     },
@@ -198,7 +198,7 @@
         "TeachedMatter": {
             "MatterCode": "M003",
             "Name": "Chirurgia",
-            "Department": "Facoltà di Medicina"
+            "DepartmentName": "Facoltà di Medicina"
         },
         "Role": 1
     },
@@ -212,7 +212,7 @@
         "TeachedMatter": {
             "MatterCode": "M004",
             "Name": "Pediatria",
-            "Department": "Facoltà di Medicina"
+            "DepartmentName": "Facoltà di Medicina"
         },
         "Role": 0
     },
@@ -226,7 +226,7 @@
         "TeachedMatter": {
             "MatterCode": "M004",
             "Name": "Pediatria",
-            "Department": "Facoltà di Medicina"
+            "DepartmentName": "Facoltà di Medicina"
         },
         "Role": 1
     },
@@ -242,7 +242,7 @@
         "TeachedMatter": {
             "MatterCode": "L003",
             "Name": "Letteratura Italiana",
-            "Department": "Facoltà di Lettere e Filosofia"
+            "DepartmentName": "Facoltà di Lettere e Filosofia"
         },
         "Role": 0
     },
@@ -256,7 +256,7 @@
         "TeachedMatter": {
             "MatterCode": "L003",
             "Name": "Letteratura Italiana",
-            "Department": "Facoltà di Lettere e Filosofia"
+            "DepartmentName": "Facoltà di Lettere e Filosofia"
         },
         "Role": 1
     },
@@ -270,7 +270,7 @@
         "TeachedMatter": {
             "MatterCode": "L004",
             "Name": "Estetica",
-            "Department": "Facoltà di Lettere e Filosofia"
+            "DepartmentName": "Facoltà di Lettere e Filosofia"
         },
         "Role": 0
     },
@@ -284,7 +284,7 @@
         "TeachedMatter": {
             "MatterCode": "L004",
             "Name": "Estetica",
-            "Department": "Facoltà di Lettere e Filosofia"
+            "DepartmentName": "Facoltà di Lettere e Filosofia"
         },
         "Role": 1
     },
@@ -300,7 +300,7 @@
         "TeachedMatter": {
             "MatterCode": "S001",
             "Name": "Biologia",
-            "Department": "Facoltà di Scienze"
+            "DepartmentName": "Facoltà di Scienze"
         },
         "Role": 0
     },
@@ -314,7 +314,7 @@
         "TeachedMatter": {
             "MatterCode": "S001",
             "Name": "Biologia",
-            "Department": "Facoltà di Scienze"
+            "DepartmentName": "Facoltà di Scienze"
         },
         "Role": 1
     },
@@ -328,7 +328,7 @@
         "TeachedMatter": {
             "MatterCode": "S002",
             "Name": "Chimica",
-            "Department": "Facoltà di Scienze"
+            "DepartmentName": "Facoltà di Scienze"
         },
         "Role": 0
     },
@@ -342,7 +342,7 @@
         "TeachedMatter": {
             "MatterCode": "S002",
             "Name": "Chimica",
-            "Department": "Facoltà di Scienze"
+            "DepartmentName": "Facoltà di Scienze"
         },
         "Role": 1
     },
@@ -358,7 +358,7 @@
         "TeachedMatter": {
             "MatterCode": "A001",
             "Name": "Progettazione Architettonica",
-            "Department": "Facoltà di Architettura"
+            "DepartmentName": "Facoltà di Architettura"
         },
         "Role": 0
     },
@@ -372,7 +372,7 @@
         "TeachedMatter": {
             "MatterCode": "A001",
             "Name": "Progettazione Architettonica",
-            "Department": "Facoltà di Architettura"
+            "DepartmentName": "Facoltà di Architettura"
         },
         "Role": 1
     },
@@ -386,7 +386,7 @@
         "TeachedMatter": {
             "MatterCode": "A002",
             "Name": "Storia dell'Architettura",
-            "Department": "Facoltà di Architettura"
+            "DepartmentName": "Facoltà di Architettura"
         },
         "Role": 0
     },
@@ -400,7 +400,7 @@
         "TeachedMatter": {
             "MatterCode": "A002",
             "Name": "Storia dell'Architettura",
-            "Department": "Facoltà di Architettura"
+            "DepartmentName": "Facoltà di Architettura"
         },
         "Role": 1
     },
@@ -416,7 +416,7 @@
         "TeachedMatter": {
             "MatterCode": "P001",
             "Name": "Scienze Politiche",
-            "Department": "Facoltà di Scienze Politiche"
+            "DepartmentName": "Facoltà di Scienze Politiche"
         },
         "Role": 0
     },
@@ -430,7 +430,7 @@
         "TeachedMatter": {
             "MatterCode": "P001",
             "Name": "Scienze Politiche",
-            "Department": "Facoltà di Scienze Politiche"
+            "DepartmentName": "Facoltà di Scienze Politiche"
         },
         "Role": 1
     },
@@ -444,7 +444,7 @@
         "TeachedMatter": {
             "MatterCode": "P002",
             "Name": "Relazioni Internazionali",
-            "Department": "Facoltà di Scienze Politiche"
+            "DepartmentName": "Facoltà di Scienze Politiche"
         },
         "Role": 0
     },
@@ -458,7 +458,7 @@
         "TeachedMatter": {
             "MatterCode": "P002",
             "Name": "Relazioni Internazionali",
-            "Department": "Facoltà di Scienze Politiche"
+            "DepartmentName": "Facoltà di Scienze Politiche"
         },
         "Role": 1
     },
@@ -474,7 +474,7 @@
         "TeachedMatter": {
             "MatterCode": "PSY001",
             "Name": "Psicologia Generale",
-            "Department": "Facoltà di Psicologia"
+            "DepartmentName": "Facoltà di Psicologia"
         },
         "Role": 0
     },
@@ -488,7 +488,7 @@
         "TeachedMatter": {
             "MatterCode": "PSY001",
             "Name": "Psicologia Generale",
-            "Department": "Facoltà di Psicologia"
+           "DepartmentName": "Facoltà di Psicologia"
         },
         "Role": 1
     },
@@ -502,7 +502,7 @@
         "TeachedMatter": {
             "MatterCode": "PSY002",
             "Name": "Psicologia Sociale",
-            "Department": "Facoltà di Psicologia"
+            "DepartmentName": "Facoltà di Psicologia"
         },
         "Role": 0
     },
@@ -516,7 +516,7 @@
         "TeachedMatter": {
             "MatterCode": "PSY002",
             "Name": "Psicologia Sociale",
-            "Department": "Facoltà di Psicologia"
+            "DepartmentName": "Facoltà di Psicologia"
         },
         "Role": 1
     }

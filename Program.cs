@@ -21,6 +21,7 @@ namespace University
             
             appMenùService.ImportAll();
             bool exitLoop = false;
+            
             while (!exitLoop)
             {
                 string[] options = { "Inserisci Studente", "Inserisci Docente", "Inserisci Esame", "Lista Facoltà", "Esci" };

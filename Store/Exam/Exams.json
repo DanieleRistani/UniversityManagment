@@ -3,7 +3,8 @@
         "ExamCode": "EX001",
         "MatterExam": {
             "MatterCode": "G001",
-            "Name": "Diritto Privato"
+            "Name": "Diritto Privato",
+            "DepartmentName":"Facoltà di Giurisprudenza"
         },
         "TeacherCode": "G004_P",
         "StudentMatricola": "G123",
@@ -14,7 +15,8 @@
         "ExamCode": "EX002",
         "MatterExam": {
             "MatterCode": "G003",
-            "Name": "Diritto Costituzionale"
+            "Name": "Diritto Costituzionale",
+            "DepartmentName":"Facoltà di Giurisprudenza"
         },
         "TeacherCode": "G003_A",
         "StudentMatricola": "G124",
@@ -25,7 +27,9 @@
         "ExamCode": "EX003",
         "MatterExam": {
             "MatterCode": "E001",
-            "Name": "Microeconomia"
+            "Name": "Microeconomia",
+            "DepartmentName":"Facoltà di Economia"
+
         },
         "TeacherCode": "E003_P",
         "StudentMatricola": "E125",
@@ -36,7 +40,9 @@
         "ExamCode": "EX004",
         "MatterExam": {
             "MatterCode": "E004",
-            "Name": "Finanza Aziendale"
+            "Name": "Finanza Aziendale",
+            "DepartmentName":"Facoltà di Economia"
+
         },
         "TeacherCode": "E004_A",
         "StudentMatricola": "E124",
@@ -47,7 +53,9 @@
         "ExamCode": "EX005",
         "MatterExam": {
             "MatterCode": "I001",
-            "Name": "Matematica I"
+            "Name": "Matematica I",
+            "DepartmentName":"Facoltà di Ingegneria"
+
         },
         "TeacherCode": "I003_P",
         "StudentMatricola": "I123",
@@ -58,7 +66,9 @@
         "ExamCode": "EX006",
         "MatterExam": {
             "MatterCode": "I003",
-            "Name": "Meccanica Applicata"
+            "Name": "Meccanica Applicata",
+            "DepartmentName":"Facoltà di Ingegneria"
+
         },
         "TeacherCode": "I004_A",
         "StudentMatricola": "I126",
@@ -69,7 +79,8 @@
         "ExamCode": "EX007",
         "MatterExam": {
             "MatterCode": "M007",
-            "Name": "Chirurgia"
+            "Name": "Chirurgia",
+            "DepartmentName":"Facoltà di Medicina"
         },
         "TeacherCode": "M003_A",
         "StudentMatricola": "M126",
@@ -80,7 +91,8 @@
         "ExamCode": "EX008",
         "MatterExam": {
             "MatterCode": "M009",
-            "Name": "Pediatria"
+            "Name": "Pediatria",
+            "DepartmentName":"Facoltà di Medicina"
         },
         "TeacherCode": "M004_P",
         "StudentMatricola": "M125",
@@ -91,7 +103,8 @@
         "ExamCode": "EX009",
         "MatterExam": {
             "MatterCode": "L001",
-            "Name": "Storia della Letteratura"
+            "Name": "Storia della Letteratura",
+            "DepartmentName":"Facoltà di Lettere e Filosofia"
         },
         "TeacherCode": "L003_P",
         "StudentMatricola": "L123",
@@ -102,7 +115,8 @@
         "ExamCode": "EX010",
         "MatterExam": {
             "MatterCode": "L005",
-            "Name": "Estetica"
+            "Name": "Estetica",
+            "DepartmentName":"Facoltà di Lettere e Filosofia"
         },
         "TeacherCode": "L004_A",
         "StudentMatricola": "L124",
@@ -113,7 +127,8 @@
         "ExamCode": "EX011",
         "MatterExam": {
             "MatterCode": "S001",
-            "Name": "Biologia"
+            "Name": "Biologia",
+            "DepartmentName":"Facoltà di Scienze"
         },
         "TeacherCode": "S001_P",
         "StudentMatricola": "S123",
@@ -124,7 +139,8 @@
         "ExamCode": "EX012",
         "MatterExam": {
             "MatterCode": "S002",
-            "Name": "Chimica"
+            "Name": "Chimica",
+            "DepartmentName":"Facoltà di Scienze"
         },
         "TeacherCode": "S002_A",
         "StudentMatricola": "S126",
@@ -135,7 +151,8 @@
         "ExamCode": "EX013",
         "MatterExam": {
             "MatterCode": "A002",
-            "Name": "Progettazione Architettonica"
+            "Name": "Progettazione Architettonica",
+            "DepartmentName":"Facoltà di Architettura"
         },
         "TeacherCode": "A001_P",
         "StudentMatricola": "A125",
@@ -146,7 +163,8 @@
         "ExamCode": "EX014",
         "MatterExam": {
             "MatterCode": "A001",
-            "Name": "Storia dell'Architettura"
+            "Name": "Storia dell'Architettura",
+            "DepartmentName":"Facoltà di Architettura"
         },
         "TeacherCode": "A002_A",
         "StudentMatricola": "A126",
@@ -157,7 +175,8 @@
         "ExamCode": "EX015",
         "MatterExam": {
             "MatterCode": "P001",
-            "Name": "Teoria Politica"
+            "Name": "Teoria Politica",
+            "DepartmentName":"Facoltà di Scienze Politiche"
         },
         "TeacherCode": "P001_A",
         "StudentMatricola": "P123",
@@ -168,7 +187,8 @@
         "ExamCode": "EX016",
         "MatterExam": {
             "MatterCode": "P006",
-            "Name": "Relazioni Internazionali"
+            "Name": "Relazioni Internazionali",
+            "DepartmentName":"Facoltà di Scienze Politiche"
         },
         "TeacherCode": "P002_P",
         "StudentMatricola": "P126",
@@ -179,7 +199,8 @@
         "ExamCode": "EX017",
         "MatterExam": {
             "MatterCode": "PS001",
-            "Name": "Psicologia Generale"
+            "Name": "Psicologia Generale",
+            "DepartmentName":"Facoltà di Psicologia"
         },
         "TeacherCode": "PSY001_A",
         "StudentMatricola": "P125",
@@ -190,7 +211,9 @@
         "ExamCode": "EX018",
         "MatterExam": {
             "MatterCode": "PS003",
-            "Name": "Psicologia Sociale"
+            "Name": "Psicologia Sociale",
+            "DepartmentName":"Facoltà di Psicologia"
+
         },
         "TeacherCode": "PSY002_P",
         "StudentMatricola": "P126",
@@ -201,7 +224,8 @@
         "ExamCode": "EX019",
         "MatterExam": {
             "MatterCode": "G004",
-            "Name": "Diritto Penale"
+            "Name": "Diritto Penale",
+            "DepartmentName":"Facoltà di Giurisprudenza"
         },
         "TeacherCode": "G003_A",
         "StudentMatricola": "G125",
@@ -212,7 +236,9 @@
         "ExamCode": "EX020",
         "MatterExam": {
             "MatterCode": "G002",
-            "Name": "Diritto Pubblico"
+            "Name": "Diritto Pubblico",
+            "DepartmentName":"Facoltà di Giurisprudenza"
+
         },
         "TeacherCode": "G004_P",
         "StudentMatricola": "G126",
@@ -223,7 +249,8 @@
         "ExamCode": "EX021",
         "MatterExam": {
             "MatterCode": "E002",
-            "Name": "Macroeconomia"
+            "Name": "Macroeconomia",
+            "DepartmentName":"Facoltà di Economia"
         },
         "TeacherCode": "E003_A",
         "StudentMatricola": "E126",
@@ -234,7 +261,9 @@
         "ExamCode": "EX022",
         "MatterExam": {
             "MatterCode": "E004",
-            "Name": "Finanza Aziendale"
+            "Name": "Finanza Aziendale",
+            "DepartmentName":"Facoltà di Economia"
+
         },
         "TeacherCode": "E004_P",
         "StudentMatricola": "E125",
@@ -245,7 +274,8 @@
         "ExamCode": "EX023",
         "MatterExam": {
             "MatterCode": "I006",
-            "Name": "Informatica"
+            "Name": "Informatica",
+            "DepartmentName":"Facoltà di Ingegneria"
         },
         "TeacherCode": "I003_P",
         "StudentMatricola": "I125",
@@ -256,7 +286,9 @@
         "ExamCode": "EX024",
         "MatterExam": {
             "MatterCode": "I004",
-            "Name": "Elettronica"
+            "Name": "Elettronica",
+            "DepartmentName":"Facoltà di Ingegneria"
+
         },
         "TeacherCode": "I004_A",
         "StudentMatricola": "I124",
@@ -267,7 +299,8 @@
         "ExamCode": "EX025",
         "MatterExam": {
             "MatterCode": "M005",
-            "Name": "Farmacologia"
+            "Name": "Farmacologia",
+            "DepartmentName":"Facoltà di Medicina"
         },
         "TeacherCode": "M003_A",
         "StudentMatricola": "M126",
@@ -278,7 +311,8 @@
         "ExamCode": "EX026",
         "MatterExam": {
             "MatterCode": "M002",
-            "Name": "Fisiologia"
+            "Name": "Fisiologia",
+            "DepartmentName":"Facoltà di Medicina"
         },
         "TeacherCode": "M002_P",
         "StudentMatricola": "M125",

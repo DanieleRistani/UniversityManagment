@@ -1,4 +1,5 @@
 using System;
+using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using OPP.Entity;
 using University.Interface;
@@ -177,7 +178,7 @@ public class StudentsService
 
 
 
-        Console.WriteLine("Nome:");
+        Console.Write("Nome:");
         xCursor = Console.GetCursorPosition().Left;
         yCursor = Console.GetCursorPosition().Top;
         string name = string.Empty;
@@ -189,21 +190,28 @@ public class StudentsService
             if (int.TryParse(name, out _))
             {
 
-                Console.WriteLine(ILog.AddNewLog("Valore non valido", "SearchStudent").PrintLog());
+                ILog.AddNewLog("Valore non valido", "SearchStudent");
                 Console.WriteLine("Valore numerico non valido");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else if (name == string.Empty)
             {
-                Console.WriteLine(ILog.AddNewLog("Valore non valido", "SearchStudent").PrintLog());
+                ILog.AddNewLog("Valore non valido", "SearchStudent");
 
                 Console.WriteLine("Valore nullo");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else
             {
+                Console.SetCursorPosition(0, Console.CursorTop);
+                Console.Write(new string(' ', Console.WindowWidth));
+                Console.SetCursorPosition(0, Console.CursorTop);
                 isValidField = true;
             }
         }
@@ -211,7 +219,7 @@ public class StudentsService
 
 
 
-        Console.WriteLine("Cognome:");
+        Console.Write("Cognome:");
         xCursor = Console.GetCursorPosition().Left;
         yCursor = Console.GetCursorPosition().Top;
         string sureName = string.Empty;
@@ -225,17 +233,24 @@ public class StudentsService
                 ILog.AddNewLog("Valore non valido", "SearchStudent");
                 Console.WriteLine("Valore numerico non valido");
                 Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else if (sureName == string.Empty)
             {
-                ILog.AddNewLog("Valore non valido", "SearchStudent").PrintLog();
+                ILog.AddNewLog("Valore non valido", "SearchStudent");
                 Console.WriteLine("Valore nullo");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
                 Console.SetCursorPosition(xCursor, yCursor);
 
             }
             else
             {
+                Console.SetCursorPosition(0, Console.CursorTop);
+                Console.Write(new string(' ', Console.WindowWidth));
+                Console.SetCursorPosition(0, Console.CursorTop);
                 isValidField = true;
             }
         }
@@ -261,18 +276,404 @@ public class StudentsService
         }
         catch (Exception ex)
         {
-
-
             Console.WriteLine(ILog.AddNewLog(ex.Message, "SearchStudent").PrintLog());
-
-
         }
 
 
 
     }
-    public void AddStudent(Student student)
+    public void AddStudent()
     {
-        studentRepository.Students.Add(student);
+
+        Console.WriteLine("Inserimento nuovo studente");
+
+        bool isValidField = false;
+        int xCursor = 0;
+        int yCursor = 0;
+
+
+
+        Console.Write("Nome:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string name = string.Empty;
+
+        while (!isValidField)
+        {
+            name = Console.ReadLine();
+
+            if (int.TryParse(name, out _))
+            {
+
+                ILog.AddNewLog("Valore non valido", "AddStudent");
+                Console.WriteLine("Valore numerico non valido");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+
+            }
+            else if (name == string.Empty)
+            {
+                ILog.AddNewLog("Valore non valido", "AddStudent");
+                Console.WriteLine("Valore nullo");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+
+            }
+            else
+            {
+                Console.SetCursorPosition(0, Console.CursorTop);
+                Console.Write(new string(' ', Console.WindowWidth));
+                Console.SetCursorPosition(0, Console.CursorTop);
+                isValidField = true;
+            }
+        }
+        isValidField = false;
+
+
+
+
+
+        Console.Write("Cognome:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string sureName = string.Empty;
+
+        while (!isValidField)
+        {
+            sureName = Console.ReadLine();
+
+            if (int.TryParse(sureName, out _))
+            {
+
+                ILog.AddNewLog("Valore non valido", "AddStudent");
+                Console.WriteLine("Valore numerico non valido");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+
+            }
+            else if (sureName == string.Empty)
+            {
+                ILog.AddNewLog("Valore non valido", "AddStudent");
+                Console.WriteLine("Valore nullo");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+
+            }
+            else
+            {
+                Console.SetCursorPosition(0, Console.CursorTop);
+                Console.Write(new string(' ', Console.WindowWidth));
+                Console.SetCursorPosition(0, Console.CursorTop);
+                isValidField = true;
+            }
+        }
+        isValidField = false;
+
+
+
+
+
+
+        Console.Write("Età:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string age;
+        int ageInt=0;
+
+        while (!isValidField)
+        {
+            age = Console.ReadLine();
+
+            if (int.TryParse(age, out ageInt) && ageInt >= 18)
+            {
+                Console.SetCursorPosition(0, Console.CursorTop);
+                Console.Write(new string(' ', Console.WindowWidth));
+                Console.SetCursorPosition(0, Console.CursorTop);
+                ageInt = int.Parse(age);
+                isValidField = true;
+
+            }
+            else if (sureName == string.Empty)
+            {
+                ILog.AddNewLog("Valore non valido", "AddStudent");
+                Console.WriteLine("Valore nullo");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+            }
+            else if (!int.TryParse(age, out _))
+            {
+                ILog.AddNewLog("Valore non valido", "AddStudent");
+                Console.WriteLine("Valore stringa non valido");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+            }
+            else
+            {
+
+                ILog.AddNewLog("Tentativo di inserimento minore", "AddStudent");
+                Console.WriteLine("Età non valida");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+
+            }
+        }
+        isValidField = false;
+
+
+
+
+
+
+        Console.WriteLine("Gender:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string gender = string.Empty;
+
+
+        List<String> optionsGender = ["Maschio","Femmina"];
+        int selectedIndexGender = 0;
+        ConsoleKeyInfo keyGender;
+
+        do
+        {
+            Console.Clear();
+            for (int i = 0; i < optionsGender.Count; i++)
+            {
+                if (i == selectedIndexGender)
+                {
+                    Console.BackgroundColor = ConsoleColor.DarkBlue;
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+                Console.WriteLine(optionsGender[i]);
+                Console.ResetColor();
+            }
+
+            keyGender = Console.ReadKey(true);
+
+            if (keyGender.Key == ConsoleKey.UpArrow)
+            {
+                selectedIndexGender = (selectedIndexGender > 0) ? selectedIndexGender - 1 : optionsGender.Count - 1;
+            }
+            else if (keyGender.Key == ConsoleKey.DownArrow)
+            {
+                selectedIndexGender = (selectedIndexGender < optionsGender.Count - 1) ? selectedIndexGender + 1 : 0;
+            }
+
+        } while (keyGender.Key != ConsoleKey.Enter);
+
+       
+
+
+        switch (selectedIndexGender)
+        {
+            case 0:
+                gender = optionsGender[selectedIndexGender];
+                break;
+            case 1:
+                gender = optionsGender[selectedIndexGender];
+
+                break;
+        }
+        isValidField = false;
+
+
+
+
+
+        Console.WriteLine("Matricola:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string mat = string.Empty;
+
+        while (!isValidField)
+        {
+            mat = Console.ReadLine();
+
+            if (mat.Length == 4 && char.IsAsciiLetter(mat.ToCharArray()[0]))
+            {
+
+                Console.SetCursorPosition(0, Console.CursorTop);
+                Console.Write(new string(' ', Console.WindowWidth));
+                Console.SetCursorPosition(0, Console.CursorTop);
+                isValidField = true;
+
+            }
+            else if (mat == string.Empty)
+            {
+                ILog.AddNewLog("Valore non valido ,valore nullo", "AddStudent");
+                Console.WriteLine("Valore nullo");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+
+            }
+            else if (mat.Length != 4)
+            {
+                ILog.AddNewLog("La matricola deve avere  4 caratteri", "AddStudent");
+                Console.WriteLine("Matricola non di 4 caratteri");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+            }
+            else if (!int.TryParse(gender, out _))
+            {
+                ILog.AddNewLog("Valore numerico non valido lettera iniziale non presente", "AddStudent");
+                Console.WriteLine("Lettera iniziale non presente");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+            }
+        }
+        isValidField = false;
+
+
+
+
+
+        Console.WriteLine("Facoltà:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string department = string.Empty;
+
+
+        List<String> options = ["Facoltà di Giurisprudenza","Facoltà di Economia","Facoltà di Ingegneria","Facoltà di Medicina","Facoltà di Lettere e Filosofia","Facoltà di Scienze","Facoltà di Architettura","Facoltà di Scienze Politiche","Facoltà di Psicologia"];
+        int selectedIndex = 0;
+        ConsoleKeyInfo key;
+
+        do
+        {
+            Console.Clear();
+            for (int i = 0; i < options.Count; i++)
+            {
+                if (i == selectedIndex)
+                {
+                    Console.BackgroundColor = ConsoleColor.DarkBlue;
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+                Console.WriteLine(options[i]);
+                Console.ResetColor();
+            }
+
+            key = Console.ReadKey(true);
+
+            if (key.Key == ConsoleKey.UpArrow)
+            {
+                selectedIndex = (selectedIndex > 0) ? selectedIndex - 1 : options.Count - 1;
+            }
+            else if (key.Key == ConsoleKey.DownArrow)
+            {
+                selectedIndex = (selectedIndex < options.Count - 1) ? selectedIndex + 1 : 0;
+            }
+
+        } while (key.Key != ConsoleKey.Enter);
+
+       
+
+
+        switch (selectedIndex)
+        {
+            case 0:
+                department = options[selectedIndex];
+                break;
+            case 1:
+                department = options[selectedIndex];
+
+                break;
+            case 2:
+                department = options[selectedIndex];
+
+                break;
+            case 3:
+                department = options[selectedIndex];
+
+
+                break;
+            case 4:
+                department = options[selectedIndex];
+
+
+                break;
+            case 5:
+                department = options[selectedIndex];
+
+
+                break;
+            case 6:
+                department = options[selectedIndex];
+
+
+                break;
+            case 7:
+                department = options[selectedIndex];
+
+
+                break;
+            case 8:
+                department = options[selectedIndex];
+
+
+                break;
+
+        }
+        isValidField = false;
+
+        Console.WriteLine("Anno di iscrizione:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string date= string.Empty;
+        int dateInt=0;       
+
+        while (!isValidField)
+        {
+            date = Console.ReadLine();
+
+           
+            if (date.Length==4 && int.TryParse(date, out _))
+            {
+
+                Console.SetCursorPosition(0, Console.CursorTop);
+                Console.Write(new string(' ', Console.WindowWidth));
+                Console.SetCursorPosition(0, Console.CursorTop);
+                dateInt = int.Parse(date);
+                isValidField = true;
+
+            }else if (date == string.Empty)
+            {
+                ILog.AddNewLog("Valore non valido, valore nullo", "AddStudent");
+                Console.WriteLine("Valore nullo");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+
+            }else{
+                ILog.AddNewLog("Data non valida", "AddStudent");
+                Console.WriteLine("Data non valida");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor);
+            }
+        }
+        isValidField = false;
+
+        studentRepository.Students.Add(new Student(name, sureName, ageInt ,gender,mat,department,dateInt));
+       
+
     }
+
+
+
+
+
+
+
+
+
 }
+

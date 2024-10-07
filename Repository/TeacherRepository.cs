@@ -2,6 +2,7 @@ using System;
 using System.Configuration;
 using System.Text.Json;
 using OPP.Entity;
+using University.Interface;
 
 namespace University.Repository;
 

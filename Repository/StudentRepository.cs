@@ -2,8 +2,9 @@ using System;
 using System.Configuration;
 using System.Text.Json;
 using OPP.Entity;
+using University.Interface;
 
-namespace University.Repository;
+namespace University.Repository; 
 
 public class StudentRepository
 {

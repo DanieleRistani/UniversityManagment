@@ -1,4 +1,5 @@
 using System;
+using University.Interface;
 
 namespace University.Service;
 

@@ -2,6 +2,7 @@ using System;
 using System.Configuration;
 using System.Text.Json;
 using University.Entity;
+using University.Interface;
 
 namespace University;
 

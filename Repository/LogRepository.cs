@@ -12,8 +12,8 @@ public class LogRepository
 
     public void ExportLogListToJson()
     {
-        String fileName = "LogsList.json";
-        String path = @"C:\Users\Desktop\wa\c#_corso\University\University\Log\";
+        String fileName = "Logs.json";
+        String path = @"C:\Users\Desktop\wa\c#_corso\University\University\Log";
 
         StringBuilder SaveLogs = new();
         string saveLogsJson = string.Empty;

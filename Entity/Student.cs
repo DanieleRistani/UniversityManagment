@@ -24,6 +24,27 @@ public class Student : Person
 
     public override string ToString()
     {
-        return $"{base.ToString()}|Matricola: {Matricola}| Corso: {Department}| Anno di iscrizione: {AnnoDiIscrizione}";
+        string table=String.Empty;
+
+        table += $"Studente\n";
+        table += "--------------------------------------------------------\n";
+        table += $"{base.ToString()}";
+        table += $"Matricola: {Matricola}\n";
+        table += $"Corso: {Department}\n";
+        table += $"Anno di iscrizione: {AnnoDiIscrizione}\n";
+
+        table += "--------------------------------------------------------\n";
+        table += "Esami:\n";
+        table += "--------------------------------------------------------\n";
+
+        foreach (var exam in Exams)
+        {
+            table += $"- {exam.ToString()}\n";
+        }
+
+        table += "--------------------------------------------------------\n";
+
+        return table;
     }
+
 }

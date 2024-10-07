@@ -1,4 +1,5 @@
 using System;
+using University.Enum;
 using University.Interface;
 using University.Repository;
 using University.Service;
@@ -61,76 +62,157 @@ public class AppMenùService
 
 
 
-       facultyService.facultyRepository.ExportFaculty();
+        facultyService.facultyRepository.ExportFaculty();
     }
 
-    public void FacultiesList(){
-         
-            bool exitLoop = false;
-            while (!exitLoop)
+    public void FacultiesList()
+    {
+
+        bool exitLoop = false;
+        while (!exitLoop)
+        {
+            List<String> options = [];
+            facultyService.facultyRepository.Faculties.ForEach(f =>
             {
-                List<String> options =[];
-                facultyService.facultyRepository.Faculties.ForEach(f =>{
-                 options.Add(f.Name);
-                });
-                String exit="Esci";
-                options.Add(exit);
-                
+                options.Add(f.Name);
+            });
+            String exit = "Esci";
+            options.Add(exit);
 
-                int selectedIndex = 0;
-                ConsoleKeyInfo key;
 
-                do
+            int selectedIndex = 0;
+            ConsoleKeyInfo key;
+
+            do
+            {
+                Console.Clear();
+                for (int i = 0; i < options.Count; i++)
+                {
+                    if (i == selectedIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkBlue;
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    Console.WriteLine(options[i]);
+                    Console.ResetColor();
+                }
+
+                key = Console.ReadKey(true);
+
+                if (key.Key == ConsoleKey.UpArrow)
+                {
+                    selectedIndex = (selectedIndex > 0) ? selectedIndex - 1 : options.Count - 1;
+                }
+                else if (key.Key == ConsoleKey.DownArrow)
+                {
+                    selectedIndex = (selectedIndex < options.Count - 1) ? selectedIndex + 1 : 0;
+                }
+
+            } while (key.Key != ConsoleKey.Enter);
+
+            Console.Clear();
+
+
+            options.ForEach(o =>
+            {
+
+                if (o.Equals(exit, StringComparison.OrdinalIgnoreCase) && options.IndexOf(o) == selectedIndex)
+                {
+                    exitLoop = true;
+                    return;
+                }
+                else if (options.IndexOf(o) == selectedIndex)
                 {
                     Console.Clear();
-                    for (int i = 0; i < options.Count; i++)
-                    {
-                        if (i == selectedIndex)
-                        {
-                            Console.BackgroundColor = ConsoleColor.DarkBlue;
-                            Console.ForegroundColor = ConsoleColor.White;
-                        }
-                        Console.WriteLine(options[i]);
-                        Console.ResetColor();
-                    }
+                    Console.WriteLine(facultyService.facultyRepository.Faculties.Find(f => f.Name == options[selectedIndex]).ToString());
 
-                    key = Console.ReadKey(true);
-
-                    if (key.Key == ConsoleKey.UpArrow)
-                    {
-                        selectedIndex = (selectedIndex > 0) ? selectedIndex - 1 : options.Count - 1;
-                    }
-                    else if (key.Key == ConsoleKey.DownArrow)
-                    {
-                        selectedIndex = (selectedIndex < options.Count - 1) ? selectedIndex + 1 : 0;
-                    }
-
-                } while (key.Key != ConsoleKey.Enter);
-
-                Console.Clear();
-
-
-                options.ForEach(o=>{
-
-                if(o.Equals(exit,StringComparison.OrdinalIgnoreCase) && options.IndexOf(o)==selectedIndex){
-                    exitLoop = true;
-                    return;  
-                }else if(options.IndexOf(o)==selectedIndex){  
-                    Console.Clear();
-                    Console.WriteLine(facultyService.facultyRepository.Faculties.Find(f=>f.Name==options[selectedIndex]).ToString());
-                    
-                    return;   
+                    return;
                 }
-                });
-                
-                if(exitLoop==false){
+            });
+
+            if (exitLoop == false)
+            {
                 Console.WriteLine("Premere un tasto per tornare alla lista delle facoltà");
                 _ = Console.ReadKey();
+            }
+
+        }
+        exitLoop = true;
+    }
+
+    public void StudentsManagment()
+    {
+        bool exitLoop = false;
+        while (!exitLoop)
+        {
+            List<String> options = ["Lista studenti", "Aggiungi studente", "Modifica studente", "Cancella studente", "Esci"];
+
+            int selectedIndex = 0;
+            ConsoleKeyInfo key;
+
+            do
+            {
+                Console.Clear();
+                for (int i = 0; i < options.Count; i++)
+                {
+                    if (i == selectedIndex)
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkBlue;
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    Console.WriteLine(options[i]);
+                    Console.ResetColor();
                 }
 
+                key = Console.ReadKey(true);
+
+                if (key.Key == ConsoleKey.UpArrow)
+                {
+                    selectedIndex = (selectedIndex > 0) ? selectedIndex - 1 : options.Count - 1;
+                }
+                else if (key.Key == ConsoleKey.DownArrow)
+                {
+                    selectedIndex = (selectedIndex < options.Count - 1) ? selectedIndex + 1 : 0;
+                }
+
+            } while (key.Key != ConsoleKey.Enter);
+
+            Console.Clear();
+
+
+            switch (selectedIndex)
+            {
+                case (int)StudentsManagmentEnum.GetAllStudents:
+                    Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                    studentService.StudentsList();
+                    break;
+                case (int)StudentsManagmentEnum.AddStudent:
+                    Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+
+                    break;
+                case (int)StudentsManagmentEnum.UpdateStudent:
+                    Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+
+                    break;
+                case (int)StudentsManagmentEnum.DeleteStudent:
+                    Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+
+                    break;
+                case (int)StudentsManagmentEnum.Exit:
+
+                    exitLoop = true;
+                    break;
             }
-            exitLoop = true;
+
+
+            if (exitLoop == false)
+            {
+                Console.WriteLine("Premere un tasto per tornare al menù gestione studenti");
+                _ = Console.ReadKey();
+            }
+
+        }
+        exitLoop = true;
     }
-    
 
 }

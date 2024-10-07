@@ -28,5 +28,10 @@ public class Exam
         ExamDate = examDate;
         Result = result;
     }
+    public override string ToString()
+    {
+        return $"Esame: {ExamCode} | Materia: {MatterExam.Name} | Docente: {TeacherCode} | Studente: {StudentMatricola} | Data: {ExamDate} | Risultato: {Result}";
+
+    }
 
 }

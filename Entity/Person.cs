@@ -19,6 +19,6 @@ public abstract class Person
 
     public override string ToString()
     {
-        return $"Nome: {Name}|Cognome: {SureName}|Età: {Age}anni|Genere: {Gender}";
+        return $"Nome: {Name}\nCognome: {SureName}\nEtà: {Age}anni\nGenere: {Gender}\n";
     }
 }

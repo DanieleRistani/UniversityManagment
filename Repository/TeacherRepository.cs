@@ -23,7 +23,7 @@ public class TeacherRepository
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine(ILog.AddNewLog(ex.Message, "ImportTeacher").PrintLog());
         }
        
     }

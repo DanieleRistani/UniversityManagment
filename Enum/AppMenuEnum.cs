@@ -2,9 +2,9 @@ namespace University.Enum;
 
 public enum AppMenuEnum
 {
-    AddStudent, 
-    AddTeacher, 
-    AddExam, 
+    StudentsManagment, 
+    TeachersManagment, 
+    ExamsManagment, 
     Facultieslist, 
     Exit
 

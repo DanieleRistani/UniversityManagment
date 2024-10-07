@@ -24,7 +24,7 @@ public class StudentRepository
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex.Message);
+            Console.WriteLine(ILog.AddNewLog(ex.Message, "ImportStudents").PrintLog());
         }
 
     }

@@ -8,12 +8,8 @@ namespace University
 
         static AppMenùService appMenùService = new AppMenùService();
     
-    
-
-
+        
         static void Main(string[] args)=>AppMenu();
-
-
 
 
         public static void AppMenu()
@@ -24,7 +20,7 @@ namespace University
             
             while (!exitLoop)
             {
-                string[] options = { "Inserisci Studente", "Inserisci Docente", "Inserisci Esame", "Lista Facoltà", "Esci" };
+                string[] options = { "Gestione Studenti", "Gestione Docenti", "Gestione Esami", "Lista Facoltà", "Esci" };
                 int selectedIndex = 0;
                 ConsoleKeyInfo key;
 
@@ -59,15 +55,17 @@ namespace University
 
                 switch (selectedIndex)
                 {
-                    case (int)AppMenuEnum.AddStudent:
+                    case (int)AppMenuEnum.StudentsManagment:
+                    
+                        Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                        appMenùService.StudentsManagment();
+                        
+                        break;
+                    case (int)AppMenuEnum.TeachersManagment:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
                         
                         break;
-                    case (int)AppMenuEnum.AddTeacher:
-                        Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        
-                        break;
-                    case (int)AppMenuEnum.AddExam:
+                    case (int)AppMenuEnum.ExamsManagment:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
                         
                         break;

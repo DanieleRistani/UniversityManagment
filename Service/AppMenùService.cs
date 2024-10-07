@@ -86,6 +86,7 @@ public class AppMenùService
             do
             {
                 Console.Clear();
+                Console.WriteLine("Seleziona una facolta':\n----------------------------------------------");
                 for (int i = 0; i < options.Count; i++)
                 {
                     if (i == selectedIndex)
@@ -153,6 +154,7 @@ public class AppMenùService
             do
             {
                 Console.Clear();
+                Console.WriteLine("Menù Gestione studenti:\n----------------------------------------------");
                 for (int i = 0; i < options.Count; i++)
                 {
                     if (i == selectedIndex)
@@ -196,7 +198,7 @@ public class AppMenùService
                     break;
                 case (int)StudentsManagmentEnum.UpdateStudent:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-
+                    studentService.UpdateStudent(studentService.studentRepository.Students);
                     break;
                 case (int)StudentsManagmentEnum.DeleteStudent:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");

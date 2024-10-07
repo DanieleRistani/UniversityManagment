@@ -1252,17 +1252,120 @@ public class StudentsService
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ILog.AddNewLog(ex.Message, "SearchStudent").PrintLog());
+            Console.WriteLine(ILog.AddNewLog(ex.Message, "UpdateStudent").PrintLog());
         }
 
 
     }
+    public void DeleteStudent(List<Student> students){
+        Console.WriteLine("Inserisci Matricola del studente da eliminare:");
+
+        bool isValidField = false;
+        int xCursor = 0;
+        int yCursor = 0;
+
+        try
+        {
+
+            Console.WriteLine("Matricola:");
+            xCursor = Console.GetCursorPosition().Left;
+            yCursor = Console.GetCursorPosition().Top;
+            string mat = string.Empty;
+            bool Notfinded = true;
+
+
+            while (!isValidField)
+            {
+                mat = Console.ReadLine();
+
+                students.ForEach(s =>
+                {
+                    if (s.Matricola.Equals(mat, StringComparison.OrdinalIgnoreCase))
+                    {
+
+                        isValidField = true;
+                        Notfinded = false;
+                        return;
+
+                    }
+
+                });
+
+                if (Notfinded)
+                {
+                    ILog.AddNewLog("Matricola non trovata", "UpdateStudent");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Matricola non trovata");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                }
+
+            }
+            isValidField = false;
+
+            List<string> optionsDeleted = ["SI","NO"];
+            int selectedIndexDeleted = 0;
+
+            ConsoleKeyInfo keyDeleted;
+
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("Sicuro di Voler eliminare questo studente?");
+            for (int i = 0; i < optionsDeleted.Count; i++)
+            {
+                if (i == selectedIndexDeleted)
+                {
+                    Console.BackgroundColor = ConsoleColor.DarkBlue;
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+                Console.WriteLine(optionsDeleted[i]);
+                Console.ResetColor();
+            }
+
+            keyDeleted = Console.ReadKey(true);
+
+            if (keyDeleted.Key == ConsoleKey.UpArrow)
+            {
+                selectedIndexDeleted = (selectedIndexDeleted > 0) ? selectedIndexDeleted - 1 : optionsDeleted.Count - 1;
+            }
+            else if (keyDeleted.Key == ConsoleKey.DownArrow)
+            {
+                selectedIndexDeleted = (selectedIndexDeleted < optionsDeleted.Count - 1) ? selectedIndexDeleted + 1 : 0;
+            }
+
+        } while (keyDeleted.Key != ConsoleKey.Enter);
+
+
+
+
+        switch (selectedIndexDeleted)
+        {
+            case 0:
+                students.Remove(students.Find(s => s.Matricola.Equals(mat, StringComparison.OrdinalIgnoreCase)));
+                Console.WriteLine("Lo Studente è stato eliminato");
+                break;
+            case 1:
+                Console.WriteLine("Lo Studente non è stato eliminato");
+               
+
+                break;
+        }
+        isValidField = false;
+
+
+        }catch(Exception ex){
+
+            Console.WriteLine(ILog.AddNewLog(ex.Message, "DeleteStudent").PrintLog());
+        }
 
 
 
 
 
 
-
-}
+}}
 

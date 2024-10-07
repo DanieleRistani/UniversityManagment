@@ -27,6 +27,7 @@ namespace University
                 do
                 {
                     Console.Clear();
+                    Console.WriteLine("Menù Principale:\n----------------------------------------------");
                     for (int i = 0; i < options.Length; i++)
                     {
                         if (i == selectedIndex)

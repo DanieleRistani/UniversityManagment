@@ -202,7 +202,7 @@ public class AppMenùService
                     break;
                 case (int)StudentsManagmentEnum.DeleteStudent:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-
+                    studentService.DeleteStudent(studentService.studentRepository.Students);
                     break;
                 case (int)StudentsManagmentEnum.Exit:
 

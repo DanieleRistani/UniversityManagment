@@ -145,7 +145,7 @@ public class AppMenùService
         bool exitLoop = false;
         while (!exitLoop)
         {
-            List<String> options = ["Lista studenti", "Aggiungi studente", "Modifica studente", "Cancella studente", "Esci"];
+            List<String> options = ["Lista studenti","Cerca Studente","Aggiungi studente", "Modifica studente", "Cancella studente", "Esci"];
 
             int selectedIndex = 0;
             ConsoleKeyInfo key;
@@ -186,6 +186,10 @@ public class AppMenùService
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
                     studentService.StudentsList();
                     break;
+                case (int)StudentsManagmentEnum.SearchStudent:
+                    Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                    studentService.SearchStudent();
+                break;
                 case (int)StudentsManagmentEnum.AddStudent:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
 

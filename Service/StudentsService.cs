@@ -2,6 +2,7 @@ using System;
 using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using OPP.Entity;
+using University.Entity;
 using University.Interface;
 using University.Repository;
 
@@ -282,7 +283,7 @@ public class StudentsService
 
 
     }
-    public void AddStudent()
+    public void AddStudent(List<Student> students)
     {
 
         Console.WriteLine("Inserimento nuovo studente");
@@ -491,18 +492,38 @@ public class StudentsService
         xCursor = Console.GetCursorPosition().Left;
         yCursor = Console.GetCursorPosition().Top;
         string mat = string.Empty;
+        bool matUnique = true;
 
         while (!isValidField)
         {
             mat = Console.ReadLine();
 
+            
+
             if (mat.Length == 4 && char.IsAsciiLetter(mat.ToCharArray()[0]))
             {
 
+                students.ForEach(s =>{   
+
+                 if(s.Matricola==mat){
+                 ILog.AddNewLog("Matricola già esistente", "AddStudent");
+                 Console.WriteLine("Valore non accettato,matricola esistente");
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                 Console.SetCursorPosition(xCursor, yCursor);
+                 matUnique = false;
+                 return;
+                 }
+
+                });
+
+
+                if(matUnique){
                 Console.SetCursorPosition(0, Console.CursorTop);
                 Console.Write(new string(' ', Console.WindowWidth));
                 Console.SetCursorPosition(0, Console.CursorTop);
                 isValidField = true;
+                }
 
             }
             else if (mat == string.Empty)
@@ -512,7 +533,7 @@ public class StudentsService
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
                 Console.SetCursorPosition(xCursor, yCursor);
-
+                matUnique = true;
             }
             else if (mat.Length != 4)
             {
@@ -521,6 +542,7 @@ public class StudentsService
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
                 Console.SetCursorPosition(xCursor, yCursor);
+                matUnique = true;
             }
             else if (!int.TryParse(gender, out _))
             {
@@ -529,6 +551,7 @@ public class StudentsService
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
                 Console.SetCursorPosition(xCursor, yCursor);
+                matUnique = true;
             }
         }
         isValidField = false;

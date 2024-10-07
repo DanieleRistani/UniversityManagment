@@ -192,7 +192,7 @@ public class AppMenùService
                 break;
                 case (int)StudentsManagmentEnum.AddStudent:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                    studentService.AddStudent();
+                    studentService.AddStudent(studentService.studentRepository.Students);
                     break;
                 case (int)StudentsManagmentEnum.UpdateStudent:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");

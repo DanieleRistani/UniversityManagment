@@ -316,7 +316,7 @@ public class TeacherService
             if (int.TryParse(name, out _))
             {
 
-                ILog.AddNewLog("Valore non valido", "AddStudent");
+                ILog.AddNewLog("Valore non valido", "AddTeacher");
 
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
@@ -329,7 +329,7 @@ public class TeacherService
             }
             else if (name == string.Empty)
             {
-                ILog.AddNewLog("Valore non valido", "AddStudent");
+                ILog.AddNewLog("Valore non valido", "AddTeacher");
 
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
@@ -366,7 +366,7 @@ public class TeacherService
             if (int.TryParse(sureName, out _))
             {
 
-                ILog.AddNewLog("Valore non valido", "AddStudent");
+                ILog.AddNewLog("Valore non valido", "AddTeacher");
 
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
@@ -379,7 +379,7 @@ public class TeacherService
             }
             else if (sureName == string.Empty)
             {
-                ILog.AddNewLog("Valore non valido", "AddStudent");
+                ILog.AddNewLog("Valore non valido", "AddTeacher");
 
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
@@ -426,7 +426,7 @@ public class TeacherService
             }
             else if (age == string.Empty)
             {
-                ILog.AddNewLog("Valore non valido", "AddStudent");
+                ILog.AddNewLog("Valore non valido", "AddTeacher");
 
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
@@ -438,7 +438,7 @@ public class TeacherService
             }
             else if (!int.TryParse(age, out _))
             {
-                ILog.AddNewLog("Valore non valido", "AddStudent");
+                ILog.AddNewLog("Valore non valido", "AddTeacher");
 
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
@@ -451,7 +451,7 @@ public class TeacherService
             else
             {
 
-                ILog.AddNewLog("Tentativo di inserimento minore", "AddStudent");
+                ILog.AddNewLog("Tentativo di inserimento minore", "AddTeacher");
 
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
@@ -599,7 +599,7 @@ public class TeacherService
                 Console.SetCursorPosition(xCursor, yCursor + 1);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
                 Console.SetCursorPosition(xCursor, yCursor + 1);
-                Console.WriteLine("Matricola non di 4 caratteri");
+                Console.WriteLine("Codice non di 6  caratteri");
                 Console.SetCursorPosition(xCursor, yCursor);
 
                 tcUnique = true;
@@ -840,7 +840,7 @@ public class TeacherService
         isValidField = false;
 
          
-        teacherRepository.Teachers.Add(new Teacher(name, sureName, ageInt, gender,teacherCode,department,matter,Role));
+        teacherRepository.Teachers.Add(new Teacher(name, sureName, ageInt, gender,department,teacherCode,matter,Role));
          
 
 

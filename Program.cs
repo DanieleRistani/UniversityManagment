@@ -20,6 +20,7 @@ namespace University
             
             while (!exitLoop)
             {
+                Console.WriteLine("Menù Principale:\n----------------------------------------------");
                 string[] options = { "Gestione Studenti", "Gestione Docenti", "Gestione Esami", "Lista Facoltà", "Esci" };
                 int selectedIndex = 0;
                 ConsoleKeyInfo key;
@@ -65,7 +66,7 @@ namespace University
                     case (int)AppMenuEnum.TeachersManagment:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
                         appMenùService.TeachersManagment();
-                        
+
                         break;
                     case (int)AppMenuEnum.ExamsManagment:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");

@@ -23,8 +23,8 @@ public class Teacher : Person
 
     public override string ToString()
     {
-        return $"{base.ToString()}| Materia: {TeachedMatter}| Dipartimento: {Department}| Role: {Role}";
+        return $"{base.ToString()}\nMateria: {TeachedMatter.MatterCode} - {TeachedMatter.Name}\nDipartimento: {Department}\nRole: {Role}";
     }
-}
 
+}
 

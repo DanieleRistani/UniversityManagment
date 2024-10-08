@@ -10,6 +10,8 @@ public class Matter
     public string Name { get; set; }
     public string DepartmentName { get; set; }
 
+
+    public Matter(){}
     public Matter(string name, string matterCode, string departmentName)
     {
         MatterCode=matterCode;

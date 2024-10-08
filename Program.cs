@@ -64,6 +64,7 @@ namespace University
                         break;
                     case (int)AppMenuEnum.TeachersManagment:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                        appMenùService.TeachersManagment();
                         
                         break;
                     case (int)AppMenuEnum.ExamsManagment:

@@ -608,7 +608,7 @@ public class StudentsService
 
                 matUnique = true;
             }
-            else if (!int.TryParse(gender, out _))
+            else if (int.TryParse(mat, out _))
             {
                 ILog.AddNewLog("Valore numerico non valido lettera iniziale non presente", "AddStudent");
 
@@ -1367,5 +1367,6 @@ public class StudentsService
 
 
 
-}}
+}
+}
 

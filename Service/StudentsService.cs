@@ -1257,7 +1257,7 @@ public class StudentsService
 
 
     }
-    public void DeleteStudent(List<Student> students){
+    public void DeleteStudent(StudentRepository studentRepository){
         Console.WriteLine("Inserisci Matricola del studente da eliminare:");
 
         bool isValidField = false;
@@ -1278,7 +1278,7 @@ public class StudentsService
             {
                 mat = Console.ReadLine();
 
-                students.ForEach(s =>
+                studentRepository.Students.ForEach(s =>
                 {
                     if (s.Matricola.Equals(mat, StringComparison.OrdinalIgnoreCase))
                     {
@@ -1345,7 +1345,7 @@ public class StudentsService
         switch (selectedIndexDeleted)
         {
             case 0:
-                students.Remove(students.Find(s => s.Matricola.Equals(mat, StringComparison.OrdinalIgnoreCase)));
+                studentRepository.Students.Remove(studentRepository.Students.Find(s => s.Matricola.Equals(mat, StringComparison.OrdinalIgnoreCase)));
                 Console.WriteLine("Lo Studente è stato eliminato");
                 break;
             case 1:

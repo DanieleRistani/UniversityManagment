@@ -18,6 +18,9 @@ public class Matter
         Name = name;
         DepartmentName = departmentName;
     }
+    public override string ToString(){
+        return $"Materia: {MatterCode} - {Name}";
+    }
 
 
 }

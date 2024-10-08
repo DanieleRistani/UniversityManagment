@@ -202,7 +202,7 @@ public class AppMenùService
                     break;
                 case (int)StudentsManagmentEnum.DeleteStudent:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                    studentService.DeleteStudent(studentService.studentRepository.Students);
+                    studentService.DeleteStudent(studentService.studentRepository);
                     break;
                 case (int)StudentsManagmentEnum.Exit:
 
@@ -278,11 +278,11 @@ public class AppMenùService
                     break;
                 case (int)TeachersManagmentEnum.UpdateTeacher:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                   
+                    teacherService.UpdateTeacher(teacherService.teacherRepository.Teachers,facultyService.facultyRepository.Faculties);
                     break;
                 case (int)TeachersManagmentEnum.DeleteTeacher:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                    
+                    teacherService.DeleteTeacher(teacherService.teacherRepository);
                     break;
                 case (int)TeachersManagmentEnum.Exit:
 

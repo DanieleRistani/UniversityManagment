@@ -70,7 +70,7 @@ namespace University
                         break;
                     case (int)AppMenuEnum.ExamsManagment:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                        
+                        appMenùService.ExamsManagment();
                         break;
                     case (int)AppMenuEnum.Facultieslist:
                         Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");

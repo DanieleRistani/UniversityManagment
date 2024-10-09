@@ -834,4 +834,168 @@ public class ExamsService
 
 
     }
+
+    public void UpdateExam(){
+
+    }
+
+    public void DeleteExam(ExamRepository exameRepository,List<Student> students){
+
+        
+         Console.WriteLine("Cancellazione esame:");
+
+
+        bool isValidField = false;
+        int xCursor = 0;
+        int yCursor = 0;
+
+
+        
+        
+        Console.WriteLine("Codice Esame:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string exameCode = string.Empty;
+
+
+        while (!isValidField)
+        {
+            exameCode = Console.ReadLine();
+
+
+
+            if (exameCode.Length == 5 && exameCode.ToCharArray()[0] == 'E' && exameCode.ToCharArray()[1] == 'X')
+            {
+
+
+
+                Console.SetCursorPosition(0, Console.CursorTop);
+                Console.Write(new string(' ', Console.WindowWidth));
+                Console.SetCursorPosition(0, Console.CursorTop);
+                isValidField = true;
+
+
+
+            }
+            else if (exameCode == string.Empty)
+            {
+                ILog.AddNewLog("Valore non valido ,valore nullo", "AddExam");
+
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.WriteLine("Valore nullo");
+                Console.SetCursorPosition(xCursor, yCursor);
+
+
+            }
+            else if (exameCode.Length != 5)
+            {
+                ILog.AddNewLog("Il codice esame deve avere  5 caratteri", "AddExam");
+
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.WriteLine("Codice esame non di 5 caratteri");
+                Console.SetCursorPosition(xCursor, yCursor);
+
+
+            }
+            else if (int.TryParse(exameCode, out _) || exameCode.ToCharArray()[1] == 'X')
+            {
+                ILog.AddNewLog("Valore numerico non valido lettere iniziali non presenti", "AddExam");
+
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.WriteLine("Lettere iniziale non presenti");
+                Console.SetCursorPosition(xCursor, yCursor);
+
+            }else if(!examRepository.Exams.Select(e=>e.ExamCode).Contains(exameCode)){
+                ILog.AddNewLog("Esame non trovato", "AddExam");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.WriteLine("Esame non trovato");
+                Console.SetCursorPosition(xCursor, yCursor);
+            }
+        }
+        isValidField = false;
+
+
+
+
+
+
+
+            Console.WriteLine("Matricola:");
+            xCursor = Console.GetCursorPosition().Left;
+            yCursor = Console.GetCursorPosition().Top;
+            string mat = string.Empty;
+            
+           
+
+
+            while (!isValidField)
+            {
+                                
+                
+            
+                mat = Console.ReadLine();
+
+
+
+                if (students.Select(s => s.Matricola).Contains(mat) && examRepository.Exams.Find(e=>e.ExamCode == exameCode).StudentMatricola == mat)
+                {
+
+
+                    isValidField = true;
+                    
+                    
+
+                }
+                else if(examRepository.Exams.Find(e=>e.ExamCode == exameCode).StudentMatricola != mat)
+                {
+                    ILog.AddNewLog("Matricola associata all esame", "AddExam");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Matricola non associata");
+                    Console.SetCursorPosition(xCursor, yCursor);
+
+                }else{
+
+                    
+                    ILog.AddNewLog("Matricola non trovata", "AddExam");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Matricola non trovata");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                }
+
+
+                
+               exameRepository.Exams.Remove(exameRepository.Exams.Find(e=>e.ExamCode == exameCode && e.StudentMatricola == mat));
+
+
+
+            }
+            isValidField = false;
+
+
+    }
+
 }

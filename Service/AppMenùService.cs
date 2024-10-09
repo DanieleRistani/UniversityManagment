@@ -362,7 +362,7 @@ public class AppMenùService
                     break;
                 case (int)ExamsManagmentEnum.DeleteExam:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                    
+                    examService.DeleteExam(examService.examRepository,studentService.studentRepository.Students);
                     break;
                 case (int)ExamsManagmentEnum.Exit:
 

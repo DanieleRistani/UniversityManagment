@@ -502,7 +502,7 @@ public class ExamsService
 
                             notfindedTeacher = false;
                             notMatterMatch = true;
-                            return;
+                            
                         }
                         else
                         {
@@ -510,7 +510,7 @@ public class ExamsService
                             isValidField = true;
                             notfindedTeacher = false;
                             notMatterMatch = false;
-                            return;
+                            
 
                         }
 
@@ -584,7 +584,7 @@ public class ExamsService
 
                     isValidField = true;
                     NotfindedMat = false;
-                    return;
+                    
 
                 }
                 else
@@ -772,7 +772,7 @@ public class ExamsService
 
                             doYet = true;
                             NotfindedMat = false;
-                            return;
+                            
                         }
                         else
                         { 
@@ -780,7 +780,7 @@ public class ExamsService
                                 isValidField = true;
                                 NotfindedMat = false;
                                 doYet = false;
-                                return;
+                               
 
                         }
 

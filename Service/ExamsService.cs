@@ -861,12 +861,11 @@ public class ExamsService
         while (!isValidField)
         {
             exameCode = Console.ReadLine();
-
+            exameCode=exameCode.ToUpper();
 
 
             if (exameCode.Length == 5 && exameCode.ToCharArray()[0] == 'E' && exameCode.ToCharArray()[1] == 'X')
             {
-
 
 
                 Console.SetCursorPosition(0, Console.CursorTop);
@@ -950,8 +949,8 @@ public class ExamsService
                 
             
                 mat = Console.ReadLine();
-
-
+                mat=mat.ToUpper();
+                
 
                 if (students.Select(s => s.Matricola).Contains(mat) && examRepository.Exams.Find(e=>e.ExamCode == exameCode).StudentMatricola == mat)
                 {
@@ -962,7 +961,7 @@ public class ExamsService
                     
 
                 }
-                else if(examRepository.Exams.Find(e=>e.ExamCode == exameCode).StudentMatricola != mat)
+                else if(students.Select(s => s.Matricola).Contains(mat) && examRepository.Exams.Find(e=>e.ExamCode == exameCode).StudentMatricola != mat)
                 {
                     ILog.AddNewLog("Matricola associata all esame", "AddExam");
                     Console.SetCursorPosition(xCursor, yCursor);

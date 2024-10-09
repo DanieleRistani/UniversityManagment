@@ -346,15 +346,15 @@ public class AppMenùService
             {
                 case (int)ExamsManagmentEnum.GetAllExams:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                   
+                    examService.ExamsList();
                     break;
                 case (int)ExamsManagmentEnum.SearchExam:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                     
+                     examService.SearchExam();
                 break;
                 case (int)ExamsManagmentEnum.AddExam:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                    
+                     examService.AddExam(examService.examRepository.Exams,studentService.studentRepository.Students,teacherService.teacherRepository.Teachers,facultyService.facultyRepository.Faculties);
                     break;
                 case (int)ExamsManagmentEnum.UpdateExam:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
@@ -362,7 +362,7 @@ public class AppMenùService
                     break;
                 case (int)ExamsManagmentEnum.DeleteExam:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                    
+                    examService.DeleteExam(examService.examRepository,studentService.studentRepository.Students);
                     break;
                 case (int)ExamsManagmentEnum.Exit:
 
@@ -373,7 +373,7 @@ public class AppMenùService
 
             if (exitLoop == false)
             {
-                Console.WriteLine("Premere un tasto per tornare al menù gestione Professori");
+                Console.WriteLine("Premere un tasto per tornare al menù gestione Esami");
                 _ = Console.ReadKey();
             }
 

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "df8QljgtIh4=",
+  "dgSpecHash": "m7Sn5pOL/Oo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Desktop\\wa\\c#_corso\\UniversityManagment\\University.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\WA\\UniversityManagment\\University.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Desktop\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
-    "C:\\Users\\Desktop\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
-    "C:\\Users\\Desktop\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+    "C:\\Users\\Acer\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

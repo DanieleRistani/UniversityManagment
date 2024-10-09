@@ -883,7 +883,7 @@ public class TeacherService
 
                 if (Notfinded)
                 {
-                    ILog.AddNewLog("Matricola non trovata", "UpdateTeacher");
+                    ILog.AddNewLog("Codice Professore non trovato", "UpdateTeacher");
                     Console.SetCursorPosition(xCursor, yCursor);
                     Console.Write(new string(' ', Console.WindowWidth - xCursor));
                     Console.SetCursorPosition(xCursor, yCursor + 1);

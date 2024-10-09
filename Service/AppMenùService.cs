@@ -346,11 +346,11 @@ public class AppMenùService
             {
                 case (int)ExamsManagmentEnum.GetAllExams:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                   
+                    examService.ExamsList();
                     break;
                 case (int)ExamsManagmentEnum.SearchExam:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                     
+                     examService.SearchExam();
                 break;
                 case (int)ExamsManagmentEnum.AddExam:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
@@ -373,8 +373,7 @@ public class AppMenùService
 
             if (exitLoop == false)
             {
-                Console.WriteLine("Premere un tasto per tornare al menù gestione Professori");
-                _ = Console.ReadKey();
+                Console.WriteLine("Premere un tasto per tornare al menù gestione Esami");
             }
 
         }

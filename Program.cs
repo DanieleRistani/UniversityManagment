@@ -11,7 +11,6 @@ namespace University
         
         static void Main(string[] args)=>AppMenu();
 
-
         public static void AppMenu()
         {
             

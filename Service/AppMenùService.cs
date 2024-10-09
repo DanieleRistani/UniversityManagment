@@ -354,7 +354,7 @@ public class AppMenùService
                 break;
                 case (int)ExamsManagmentEnum.AddExam:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
-                    
+                     examService.AddExam(examService.examRepository.Exams,studentService.studentRepository.Students,teacherService.teacherRepository.Teachers,facultyService.facultyRepository.Faculties);
                     break;
                 case (int)ExamsManagmentEnum.UpdateExam:
                     Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");

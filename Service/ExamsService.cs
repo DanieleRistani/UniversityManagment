@@ -220,7 +220,7 @@ public class ExamsService
             else if (examRepository.Exams.FindAll(e => e.ExamCode.Equals(examCode, StringComparison.OrdinalIgnoreCase)).Count == 1)
             {
                 Console.Clear();
-                Console.WriteLine(examRepository.Exams.FindAll(e => e.ExamCode.Equals(examCode, StringComparison.OrdinalIgnoreCase)).First().ToString());
+                Console.WriteLine(examRepository.Exams.FindAll(e => e.ExamCode.Equals(examCode, StringComparison.OrdinalIgnoreCase))[0].ToString());
             }
             else
             {

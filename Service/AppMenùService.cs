@@ -374,6 +374,7 @@ public class AppMenùService
             if (exitLoop == false)
             {
                 Console.WriteLine("Premere un tasto per tornare al menù gestione Esami");
+                _ = Console.ReadKey();
             }
 
         }

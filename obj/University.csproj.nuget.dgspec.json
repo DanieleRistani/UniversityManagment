@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\WA\\UniversityManagment\\University.csproj": {}
+    "C:\\Users\\Acer\\wa\\UniversityManagment\\University.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\WA\\UniversityManagment\\University.csproj": {
+    "C:\\Users\\Acer\\wa\\UniversityManagment\\University.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\WA\\UniversityManagment\\University.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\wa\\UniversityManagment\\University.csproj",
         "projectName": "University",
-        "projectPath": "C:\\Users\\Acer\\WA\\UniversityManagment\\University.csproj",
+        "projectPath": "C:\\Users\\Acer\\wa\\UniversityManagment\\University.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\WA\\UniversityManagment\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\wa\\UniversityManagment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

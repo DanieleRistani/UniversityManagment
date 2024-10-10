@@ -1,7 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Acer\\WA\\UniversityManagment\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagment\\service\\examsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\examsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|c:\\users\\desktop\\wa\\c#_corso\\universitymanagment\\service\\appmen\u00F9service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0665A8B0-7798-44EE-8967-2040A811E389}|University.csproj|solutionrelative:service\\appmen\u00F9service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +18,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExamsService.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagment\\Service\\ExamsService.cs",
+              "RelativeDocumentMoniker": "Service\\ExamsService.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagment\\Service\\ExamsService.cs",
+              "RelativeToolTip": "Service\\ExamsService.cs",
+              "ViewState": "AgIAAN8BAAAAAAAAAAAcwOABAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T20:23:22.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppMen\u00F9Service.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagment\\Service\\AppMen\u00F9Service.cs",
+              "RelativeDocumentMoniker": "Service\\AppMen\u00F9Service.cs",
+              "ToolTip": "C:\\Users\\Desktop\\WA\\c#_corso\\UniversityManagment\\Service\\AppMen\u00F9Service.cs",
+              "RelativeToolTip": "Service\\AppMen\u00F9Service.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAWwC8BAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T15:24:37.823Z"
             }
           ]
         }

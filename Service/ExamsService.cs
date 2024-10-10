@@ -265,7 +265,7 @@ public class ExamsService
         while (!isValidField)
         {
             exameCode = Console.ReadLine();
-
+            exameCode = exameCode.ToUpper();
 
 
             if (exameCode.Length == 5 && exameCode.ToCharArray()[0] == 'E' && exameCode.ToCharArray()[1] == 'X')
@@ -478,65 +478,50 @@ public class ExamsService
 
 
 
-            string teacherCode = string.Empty;
-
-
             Console.WriteLine("Codice Professore:");
             xCursor = Console.GetCursorPosition().Left;
             yCursor = Console.GetCursorPosition().Top;
-            bool notfindedTeacher = true;
-            bool notMatterMatch = true;
+            string teacherCode = string.Empty;
+           
 
             while (!isValidField)
             {
-                notfindedTeacher = true;
-                notMatterMatch = true;
+
                 teacherCode = Console.ReadLine();
+                teacherCode = teacherCode.ToUpper();
 
-                
-                
-                    if (teachers.Select(t=>t.TeacherCode).Contains(teacherCode))
+                Teacher teacher = teachers.Find(t => t.TeacherCode.Equals(teacherCode, StringComparison.OrdinalIgnoreCase));
+
+                if (teachers.Select(t => t.TeacherCode).Contains(teacherCode))
+                {
+                    if (teacher.TeachedMatter.MatterCode.Equals(matter.MatterCode))
                     {
-                        if (teachers.Find(t => t.TeacherCode == teacherCode).TeachedMatter != matter)
-                        {
-
-                            notfindedTeacher = false;
-                            notMatterMatch = true;
-                            
-                        }
-                        else
-                        {
-
-                            isValidField = true;
-                            notfindedTeacher = false;
-                            notMatterMatch = false;
-                            
-
-                        }
+                        isValidField = true;
+                        Console.SetCursorPosition(0, Console.CursorTop);
+                        Console.Write(new string(' ', Console.WindowWidth));
+                        Console.SetCursorPosition(0, Console.CursorTop);
 
 
-                    }else{
-                    notMatterMatch=false;
-                    notfindedTeacher = true;
+                    }
+                    else
+                    {
+                        ILog.AddNewLog("Professore non conforme alla materia", "AddExam");
+                        Console.SetCursorPosition(xCursor, yCursor);
+                        Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                        Console.SetCursorPosition(xCursor, yCursor + 1);
+                        Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                        Console.SetCursorPosition(xCursor, yCursor + 1);
+                        Console.WriteLine("Materia non insegnata da questo professore");
+                        Console.SetCursorPosition(xCursor, yCursor);
+
+
+
+
                     }
 
 
-              
-
-                if (notMatterMatch)
-                {
-                    ILog.AddNewLog("Professore non conforme alla materia", "AddExam");
-                    Console.SetCursorPosition(xCursor, yCursor);
-                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                    Console.SetCursorPosition(xCursor, yCursor + 1);
-                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                    Console.SetCursorPosition(xCursor, yCursor + 1);
-                    Console.WriteLine("Materia non insegnata da questo professore");
-                    Console.SetCursorPosition(xCursor, yCursor); 
-
                 }
-
-                if (notfindedTeacher)
+                else
                 {
                     ILog.AddNewLog("Codice Professore non trovato", "AddExam");
                     Console.SetCursorPosition(xCursor, yCursor);
@@ -546,13 +531,17 @@ public class ExamsService
                     Console.SetCursorPosition(xCursor, yCursor + 1);
                     Console.WriteLine("Codice Professore non trovato");
                     Console.SetCursorPosition(xCursor, yCursor);
-
                 }
 
 
 
+
             }
+
             isValidField = false;
+
+
+
 
 
 
@@ -565,16 +554,17 @@ public class ExamsService
             xCursor = Console.GetCursorPosition().Left;
             yCursor = Console.GetCursorPosition().Top;
             string mat = string.Empty;
-            bool NotfindedMat = true;
-           
+
+
 
 
             while (!isValidField)
             {
-                                
-                NotfindedMat = true;
-            
+
+
+
                 mat = Console.ReadLine();
+                mat = mat.ToUpper();
 
 
 
@@ -583,19 +573,15 @@ public class ExamsService
 
 
                     isValidField = true;
-                    NotfindedMat = false;
-                    
+                    Console.SetCursorPosition(0, Console.CursorTop);
+                    Console.Write(new string(' ', Console.WindowWidth));
+                    Console.SetCursorPosition(0, Console.CursorTop);
+
 
                 }
                 else
                 {
-                    NotfindedMat = true;
 
-                }
-
-
-                if (NotfindedMat)
-                {
                     ILog.AddNewLog("Matricola non trovata", "AddExam");
                     Console.SetCursorPosition(xCursor, yCursor);
                     Console.Write(new string(' ', Console.WindowWidth - xCursor));
@@ -606,6 +592,9 @@ public class ExamsService
                     Console.SetCursorPosition(xCursor, yCursor);
 
                 }
+
+
+
 
 
 
@@ -677,7 +666,7 @@ public class ExamsService
 
 
 
-            Console.Write("Età:");
+            Console.Write("Esito:");
             xCursor = Console.GetCursorPosition().Left;
             yCursor = Console.GetCursorPosition().Top;
             string result;
@@ -752,47 +741,56 @@ public class ExamsService
             xCursor = Console.GetCursorPosition().Left;
             yCursor = Console.GetCursorPosition().Top;
             string mat = string.Empty;
-            bool NotfindedMat = true;
-            bool doYet = true;
+
 
 
             while (!isValidField)
             {
-                NotfindedMat = true;
-                doYet = true;
 
-                     mat = Console.ReadLine();
 
-                
-                
-                    if (students.Select(s=>s.Matricola).Contains(mat))
+                mat = Console.ReadLine();
+                mat = mat.ToUpper();
+
+
+
+                if (students.Select(s => s.Matricola).Contains(mat))
+                {
+                    if (exams.Contains(exams.Find(e => e.ExamCode == exameCode && e.StudentMatricola == mat)))
                     {
-                        if (exams.Select(e=>e.StudentMatricola).Contains(mat))
-                        {
 
-                            doYet = true;
-                            NotfindedMat = false;
-                            
-                        }
-                        else
-                        { 
+                        ILog.AddNewLog("Matricola già associata a questo esame", "AddExam");
+                        Console.SetCursorPosition(xCursor, yCursor);
+                        Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                        Console.SetCursorPosition(xCursor, yCursor + 1);
+                        Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                        Console.SetCursorPosition(xCursor, yCursor + 1);
+                        Console.WriteLine("Matricola già associata");
+                        Console.SetCursorPosition(xCursor, yCursor);
 
-                                isValidField = true;
-                                NotfindedMat = false;
-                                doYet = false;
-                               
+                    }
+                    else if (students.Find(s => s.Matricola == mat).Department != exams.Find(e => e.ExamCode.Equals(exameCode)).MatterExam.DepartmentName)
+                    {
+                        ILog.AddNewLog("Matricola con diversa facoltà", "AddExam");
+                        Console.SetCursorPosition(xCursor, yCursor);
+                        Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                        Console.SetCursorPosition(xCursor, yCursor + 1);
+                        Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                        Console.SetCursorPosition(xCursor, yCursor + 1);
+                        Console.WriteLine("Matricola con diversa facoltà");
+                        Console.SetCursorPosition(xCursor, yCursor);
 
-                        }
+                    }
+                    else
+                    {
 
-                    }else{
-                    doYet = false;
-                    NotfindedMat = true;
+                        isValidField = true;
+
+
+
                     }
 
-                
-
-
-                if (NotfindedMat)
+                }
+                else
                 {
                     ILog.AddNewLog("Matricola non trovata", "AddExam");
                     Console.SetCursorPosition(xCursor, yCursor);
@@ -802,21 +800,9 @@ public class ExamsService
                     Console.SetCursorPosition(xCursor, yCursor + 1);
                     Console.WriteLine("Matricola non trovata");
                     Console.SetCursorPosition(xCursor, yCursor);
-                
                 }
 
-                if (doYet)
-                {
-                    ILog.AddNewLog("Matricola già associata a questo esame", "AddExam");
-                    Console.SetCursorPosition(xCursor, yCursor);
-                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                    Console.SetCursorPosition(xCursor, yCursor + 1);
-                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                    Console.SetCursorPosition(xCursor, yCursor + 1);
-                    Console.WriteLine("Matricola già associata");
-                    Console.SetCursorPosition(xCursor, yCursor);
-    
-                }
+
 
 
             }
@@ -835,14 +821,16 @@ public class ExamsService
 
     }
 
-    public void UpdateExam(){
+    public void UpdateExam()
+    {
 
     }
 
-    public void DeleteExam(ExamRepository exameRepository,List<Student> students){
+    public void DeleteExam(ExamRepository exameRepository, List<Student> students)
+    {
 
-        
-         Console.WriteLine("Cancellazione esame:");
+
+        Console.WriteLine("Cancellazione esame:");
 
 
         bool isValidField = false;
@@ -850,8 +838,8 @@ public class ExamsService
         int yCursor = 0;
 
 
-        
-        
+
+
         Console.WriteLine("Codice Esame:");
         xCursor = Console.GetCursorPosition().Left;
         yCursor = Console.GetCursorPosition().Top;
@@ -861,12 +849,11 @@ public class ExamsService
         while (!isValidField)
         {
             exameCode = Console.ReadLine();
-
+            exameCode = exameCode.ToUpper();
 
 
             if (exameCode.Length == 5 && exameCode.ToCharArray()[0] == 'E' && exameCode.ToCharArray()[1] == 'X')
             {
-
 
 
                 Console.SetCursorPosition(0, Console.CursorTop);
@@ -917,7 +904,9 @@ public class ExamsService
                 Console.WriteLine("Lettere iniziale non presenti");
                 Console.SetCursorPosition(xCursor, yCursor);
 
-            }else if(!examRepository.Exams.Select(e=>e.ExamCode).Contains(exameCode)){
+            }
+            else if (!examRepository.Exams.Select(e => e.ExamCode).Contains(exameCode))
+            {
                 ILog.AddNewLog("Esame non trovato", "AddExam");
                 Console.SetCursorPosition(xCursor, yCursor);
                 Console.Write(new string(' ', Console.WindowWidth - xCursor));
@@ -936,64 +925,66 @@ public class ExamsService
 
 
 
-            Console.WriteLine("Matricola:");
-            xCursor = Console.GetCursorPosition().Left;
-            yCursor = Console.GetCursorPosition().Top;
-            string mat = string.Empty;
-            
-           
+        Console.WriteLine("Matricola:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string mat = string.Empty;
 
 
-            while (!isValidField)
+
+
+        while (!isValidField)
+        {
+
+
+
+            mat = Console.ReadLine();
+            mat = mat.ToUpper();
+
+
+            if (students.Select(s => s.Matricola).Contains(mat) && examRepository.Exams.Find(e => e.ExamCode == exameCode).StudentMatricola == mat)
             {
-                                
-                
-            
-                mat = Console.ReadLine();
 
 
-
-                if (students.Select(s => s.Matricola).Contains(mat) && examRepository.Exams.Find(e=>e.ExamCode == exameCode).StudentMatricola == mat)
-                {
-
-
-                    isValidField = true;
-                    
-                    
-
-                }
-                else if(examRepository.Exams.Find(e=>e.ExamCode == exameCode).StudentMatricola != mat)
-                {
-                    ILog.AddNewLog("Matricola associata all esame", "AddExam");
-                    Console.SetCursorPosition(xCursor, yCursor);
-                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                    Console.SetCursorPosition(xCursor, yCursor + 1);
-                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                    Console.SetCursorPosition(xCursor, yCursor + 1);
-                    Console.WriteLine("Matricola non associata");
-                    Console.SetCursorPosition(xCursor, yCursor);
-
-                }else{
-
-                    
-                    ILog.AddNewLog("Matricola non trovata", "AddExam");
-                    Console.SetCursorPosition(xCursor, yCursor);
-                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                    Console.SetCursorPosition(xCursor, yCursor + 1);
-                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
-                    Console.SetCursorPosition(xCursor, yCursor + 1);
-                    Console.WriteLine("Matricola non trovata");
-                    Console.SetCursorPosition(xCursor, yCursor);
-                }
-
-
-                
-               exameRepository.Exams.Remove(exameRepository.Exams.Find(e=>e.ExamCode == exameCode && e.StudentMatricola == mat));
+                isValidField = true;
 
 
 
             }
-            isValidField = false;
+            else if (students.Select(s => s.Matricola).Contains(mat) && examRepository.Exams.Find(e => e.ExamCode == exameCode).StudentMatricola != mat)
+            {
+                ILog.AddNewLog("Matricola associata all esame", "AddExam");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.WriteLine("Matricola non associata");
+                Console.SetCursorPosition(xCursor, yCursor);
+
+            }
+            else
+            {
+
+
+                ILog.AddNewLog("Matricola non trovata", "AddExam");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.WriteLine("Matricola non trovata");
+                Console.SetCursorPosition(xCursor, yCursor);
+            }
+
+
+
+            exameRepository.Exams.Remove(exameRepository.Exams.Find(e => e.ExamCode == exameCode && e.StudentMatricola == mat));
+
+
+
+        }
+        isValidField = false;
 
 
     }

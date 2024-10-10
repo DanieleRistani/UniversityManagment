@@ -482,7 +482,7 @@ public class ExamsService
             xCursor = Console.GetCursorPosition().Left;
             yCursor = Console.GetCursorPosition().Top;
             string teacherCode = string.Empty;
-           
+
 
             while (!isValidField)
             {
@@ -821,8 +821,501 @@ public class ExamsService
 
     }
 
-    public void UpdateExam()
+    public void UpdateExam(List<Exam> exams, List<Student> students, List<Teacher> teachers, List<Faculty> faculties)
     {
+        Console.WriteLine("Inserisci Codice esame da modificare:");
+
+        bool isValidField = false;
+        int xCursor = 0;
+        int yCursor = 0;
+
+
+        Console.WriteLine("Codice Esame:");
+        xCursor = Console.GetCursorPosition().Left;
+        yCursor = Console.GetCursorPosition().Top;
+        string examCode = string.Empty;
+        bool Notfinded = true;
+
+
+        while (!isValidField)
+        {
+            examCode = Console.ReadLine();
+
+            examRepository.Exams.ForEach(e =>
+            {
+                if (e.ExamCode.Equals(examCode, StringComparison.OrdinalIgnoreCase))
+                {
+
+                    isValidField = true;
+                    Notfinded = false;
+                    return;
+
+                }
+
+            });
+
+            if (Notfinded)
+            {
+                ILog.AddNewLog("Codice Esame non trovato", "UpdateExam");
+                Console.SetCursorPosition(xCursor, yCursor);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                Console.SetCursorPosition(xCursor, yCursor + 1);
+                Console.WriteLine("Codice Esame non trovato");
+                Console.SetCursorPosition(xCursor, yCursor);
+            }
+
+        }
+        isValidField = false;
+
+
+        Exam exam = exams.Find(s => s.ExamCode.Equals(examCode, StringComparison.OrdinalIgnoreCase));
+
+        List<string> options = ["Materia", "Codice professore", "Matricola studente", "Data esame", "Risultato"];
+
+
+
+        int selectedIndex = 0;
+        ConsoleKeyInfo key;
+
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("Seleziona il campo da modificare:");
+            for (int i = 0; i < options.Count; i++)
+            {
+                if (i == selectedIndex)
+                {
+                    Console.BackgroundColor = ConsoleColor.DarkBlue;
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+                Console.WriteLine(options[i]);
+                Console.ResetColor();
+            }
+
+            key = Console.ReadKey(true);
+
+            if (key.Key == ConsoleKey.UpArrow)
+            {
+                selectedIndex = (selectedIndex > 0) ? selectedIndex - 1 : options.Count - 1;
+            }
+            else if (key.Key == ConsoleKey.DownArrow)
+            {
+                selectedIndex = (selectedIndex < options.Count - 1) ? selectedIndex + 1 : 0;
+            }
+
+        } while (key.Key != ConsoleKey.Enter);
+
+        Console.Clear();
+
+        switch (selectedIndex)
+        {
+            case 0:
+                Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                Console.WriteLine("Materia attuale: " + exam.MatterExam.Name);
+                Console.WriteLine("Inserisci nuova materia:");
+
+                xCursor = Console.GetCursorPosition().Left;
+            yCursor = Console.GetCursorPosition().Top;
+            string department = string.Empty;
+
+
+            List<String> optionsFaculties = ["Facoltà di Giurisprudenza", "Facoltà di Economia", "Facoltà di Ingegneria", "Facoltà di Medicina", "Facoltà di Lettere e Filosofia", "Facoltà di Scienze", "Facoltà di Architettura", "Facoltà di Scienze Politiche", "Facoltà di Psicologia"];
+            int selectedIndexFaculties = 0;
+            ConsoleKeyInfo Facultieskey;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Facoltà:");
+
+                for (int i = 0; i < optionsFaculties.Count; i++)
+                {
+                    if (i == selectedIndexFaculties)
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkBlue;
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    Console.WriteLine(optionsFaculties[i]);
+                    Console.ResetColor();
+                }
+
+                Facultieskey = Console.ReadKey(true);
+
+                if (Facultieskey.Key == ConsoleKey.UpArrow)
+                {
+                    selectedIndexFaculties = (selectedIndexFaculties > 0) ? selectedIndexFaculties - 1 : optionsFaculties.Count - 1;
+                }
+                else if (Facultieskey.Key == ConsoleKey.DownArrow)
+                {
+                    selectedIndexFaculties = (selectedIndexFaculties < optionsFaculties.Count - 1) ? selectedIndexFaculties + 1 : 0;
+                }
+
+            } while (Facultieskey.Key != ConsoleKey.Enter);
+
+
+
+
+            switch (selectedIndexFaculties)
+            {
+                case 0:
+                    department = optionsFaculties[selectedIndexFaculties];
+                    break;
+                case 1:
+                    department = optionsFaculties[selectedIndexFaculties];
+
+                    break;
+                case 2:
+                    department = optionsFaculties[selectedIndexFaculties];
+
+                    break;
+                case 3:
+                    department = optionsFaculties[selectedIndexFaculties];
+
+
+                    break;
+                case 4:
+                    department = optionsFaculties[selectedIndexFaculties];
+
+
+                    break;
+                case 5:
+                    department = optionsFaculties[selectedIndexFaculties];
+
+
+                    break;
+                case 6:
+                    department = optionsFaculties[selectedIndexFaculties];
+
+
+                    break;
+                case 7:
+                    department = optionsFaculties[selectedIndexFaculties];
+
+
+                    break;
+                case 8:
+                    department = optionsFaculties[selectedIndexFaculties];
+
+
+                    break;
+
+            }
+            isValidField = false;
+
+
+
+
+
+
+            xCursor = Console.GetCursorPosition().Left;
+            yCursor = Console.GetCursorPosition().Top;
+            List<String> optionsMatter = faculties.Find(f => f.Name == department).Matters.Select(m => m.Name).ToList();
+            Matter matter = new();
+            int selectedIndexMatter = 0;
+            ConsoleKeyInfo keyMatter;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Materia:");
+                for (int i = 0; i < optionsMatter.Count; i++)
+                {
+                    if (i == selectedIndexMatter)
+                    {
+                        Console.BackgroundColor = ConsoleColor.DarkBlue;
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    Console.WriteLine(optionsMatter[i]);
+                    Console.ResetColor();
+                }
+
+                keyMatter = Console.ReadKey(true);
+
+                if (keyMatter.Key == ConsoleKey.UpArrow)
+                {
+                    selectedIndexMatter = (selectedIndexMatter > 0) ? selectedIndexMatter - 1 : optionsMatter.Count - 1;
+                }
+                else if (keyMatter.Key == ConsoleKey.DownArrow)
+                {
+                    selectedIndexMatter = (selectedIndexMatter < optionsMatter.Count - 1) ? selectedIndexMatter + 1 : 0;
+                }
+
+            } while (keyMatter.Key != ConsoleKey.Enter);
+
+            Console.Clear();
+
+            optionsMatter.ForEach(o =>
+            {
+
+
+                if (optionsMatter.IndexOf(o) == selectedIndexMatter)
+                {
+
+                    matter = faculties.Find(f => f.Name == department).Matters.Find(m => m.Name == o);
+                    return;
+                }
+            });
+            
+            exam.MatterExam = matter;
+            isValidField = true;
+                break;
+            case 1:
+                Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                Console.WriteLine("Codice professore attuale: " + exam.TeacherCode);
+                Console.WriteLine("Inserisci nuovo codice professore:");
+                
+            xCursor = Console.GetCursorPosition().Left;
+            yCursor = Console.GetCursorPosition().Top;
+            string teacherCode = string.Empty;
+
+
+            while (!isValidField)
+            {
+
+                teacherCode = Console.ReadLine();
+                teacherCode = teacherCode.ToUpper();
+
+                Teacher teacher = teachers.Find(t => t.TeacherCode.Equals(teacherCode, StringComparison.OrdinalIgnoreCase));
+
+                if (teachers.Select(t => t.TeacherCode).Contains(teacherCode))
+                {
+                    if (teacher.TeachedMatter.MatterCode.Equals(exam.MatterExam.MatterCode))
+                    {
+                        isValidField = true;
+                        Console.SetCursorPosition(0, Console.CursorTop);
+                        Console.Write(new string(' ', Console.WindowWidth));
+                        Console.SetCursorPosition(0, Console.CursorTop);
+
+
+                    }
+                    else
+                    {
+                        ILog.AddNewLog("Professore non conforme alla materia", "UpdateExam");
+                        Console.SetCursorPosition(xCursor, yCursor);
+                        Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                        Console.SetCursorPosition(xCursor, yCursor + 1);
+                        Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                        Console.SetCursorPosition(xCursor, yCursor + 1);
+                        Console.WriteLine("Materia non insegnata da questo professore");
+                        Console.SetCursorPosition(xCursor, yCursor);
+
+
+
+
+                    }
+
+
+                }
+                else
+                {
+                    ILog.AddNewLog("Codice Professore non trovato", "UpdateExam");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Codice Professore non trovato");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                }
+
+
+
+
+            }
+            exam.TeacherCode = teacherCode;
+            isValidField = false;
+                break;
+            case 2:
+                Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                Console.WriteLine("Matricola studente attuale: " + exam.StudentMatricola);
+                Console.WriteLine("Inserisci nuova matricola studente:");
+                
+            xCursor = Console.GetCursorPosition().Left;
+            yCursor = Console.GetCursorPosition().Top;
+            string mat = string.Empty;
+
+
+
+
+            while (!isValidField)
+            {
+
+
+
+                mat = Console.ReadLine();
+                mat = mat.ToUpper();
+
+
+
+                if (students.Select(s => s.Matricola).Contains(mat))
+                {
+
+
+                    isValidField = true;
+                    Console.SetCursorPosition(0, Console.CursorTop);
+                    Console.Write(new string(' ', Console.WindowWidth));
+                    Console.SetCursorPosition(0, Console.CursorTop);
+
+
+                }
+                else
+                {
+
+                    ILog.AddNewLog("Matricola non trovata", "UpdateExam");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Matricola non trovata");
+                    Console.SetCursorPosition(xCursor, yCursor);
+
+                }
+
+
+
+
+
+
+
+            }
+            exam.StudentMatricola = mat;
+            isValidField = false;
+                break;
+            case 3:
+                Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                Console.WriteLine("Data esame attule: " + exam.ExamDate);
+                Console.WriteLine("Inserisci nuova data:");
+                xCursor = Console.GetCursorPosition().Left;
+            yCursor = Console.GetCursorPosition().Top;
+            string date = string.Empty;
+            DateTime dateExam = DateTime.Now;
+
+            while (!isValidField)
+            {
+                date = Console.ReadLine();
+
+                if (DateTime.TryParse(date, out dateExam) && dateExam < DateTime.Now)
+                {
+
+                    Console.SetCursorPosition(0, Console.CursorTop);
+                    Console.Write(new string(' ', Console.WindowWidth));
+                    Console.SetCursorPosition(0, Console.CursorTop);
+                    dateExam = DateTime.Parse(date);
+                    isValidField = true;
+
+
+                }
+                else if (date == string.Empty)
+                {
+                    ILog.AddNewLog("Valore non valido ,valore nullo", "UpdateExam");
+
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Valore nullo");
+                    Console.SetCursorPosition(xCursor, yCursor);
+
+
+                }
+                else
+                {
+                    ILog.AddNewLog("Valore non valido formato Data errato", "UpdateExam");
+
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Formato Data errato");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                }
+
+
+
+            }
+
+            exam.ExamDate = dateExam;
+            isValidField = false;
+
+
+                break;
+            case 4:
+                Console.WriteLine($"Hai selezionato: {options[selectedIndex]}");
+                Console.WriteLine("Risultato esame attuale: " + exam.Result);
+                Console.WriteLine("Inserisci nuovo risultato:");
+                xCursor = Console.GetCursorPosition().Left;
+            yCursor = Console.GetCursorPosition().Top;
+            string result;
+            int resultInt = 0;
+
+            while (!isValidField)
+            {
+                result = Console.ReadLine();
+
+                if (int.TryParse(result, out resultInt) && resultInt >= 0 && resultInt <= 30)
+                {
+                    Console.SetCursorPosition(0, Console.CursorTop);
+                    Console.Write(new string(' ', Console.WindowWidth));
+                    Console.SetCursorPosition(0, Console.CursorTop);
+                    resultInt = int.Parse(result);
+                    isValidField = true;
+
+                }
+                else if (result == string.Empty)
+                {
+                    ILog.AddNewLog("Valore non valido", "UpdateExam");
+
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Valore nullo");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                }
+                else if (!int.TryParse(result, out _))
+                {
+                    ILog.AddNewLog("Valore non valido", "UpdateExam");
+
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Valore stringa non valido");
+                    Console.SetCursorPosition(xCursor, yCursor);
+                }
+                else
+                {
+
+                    ILog.AddNewLog("Voto non valido, fuori range", "UpdateExam");
+
+                    Console.SetCursorPosition(xCursor, yCursor);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.Write(new string(' ', Console.WindowWidth - xCursor));
+                    Console.SetCursorPosition(xCursor, yCursor + 1);
+                    Console.WriteLine("Voto non valido valore fuori range [0-30]");
+                    Console.SetCursorPosition(xCursor, yCursor);
+
+                }
+            }
+
+            exam.Result = resultInt;
+            isValidField = false;
+                break;
+
+
+        }
+
+
+
+
 
     }
 

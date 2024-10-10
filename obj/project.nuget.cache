@@ -1,18 +1,19 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "m75v4fsRDp4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Acer\\wa\\UniversityManagment\\University.csproj",
-=======
-  "dgSpecHash": "df8QljgtIh4=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Desktop\\wa\\c#_corso\\UniversityManagment\\University.csproj",
->>>>>>> 51281b69466a1e51d220868c88ba2fce32db3c6d
   "expectedPackageFiles": [
-    "C:\\Users\\Desktop\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
-    "C:\\Users\\Desktop\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
-    "C:\\Users\\Desktop\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+    "C:\\Users\\Acer\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Si è verificato un problema durante la lettura del file di cache C:\\Users\\Acer\\wa\\UniversityManagment\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

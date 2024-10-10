@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\Acer\\wa\\UniversityManagment\\University.csproj": {}
   },
   "projects": {
@@ -13,22 +12,13 @@
         "projectPath": "C:\\Users\\Acer\\wa\\UniversityManagment\\University.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Acer\\wa\\UniversityManagment\\obj\\",
-=======
-    "C:\\Users\\Desktop\\wa\\c#_corso\\UniversityManagment\\University.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Desktop\\wa\\c#_corso\\UniversityManagment\\University.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Desktop\\wa\\c#_corso\\UniversityManagment\\University.csproj",
-        "projectName": "University",
-        "projectPath": "C:\\Users\\Desktop\\wa\\c#_corso\\UniversityManagment\\University.csproj",
-        "packagesPath": "C:\\Users\\Desktop\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Desktop\\wa\\c#_corso\\UniversityManagment\\obj\\",
->>>>>>> 51281b69466a1e51d220868c88ba2fce32db3c6d
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -36,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
